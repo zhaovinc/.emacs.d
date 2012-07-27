@@ -1,4 +1,5 @@
 (require 'auto-complete-config)
+(require 'auto-complete-clang)
 (require 'etags-table)
 (require 'ac-company)
 (require 'dropdown-list)
