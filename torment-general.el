@@ -13,7 +13,7 @@
 (require 'eproject)
 (require 'eproject-extras)
 (require 'expand-region)
-
+(require 'wrap-region)
 
 (color-theme-initialize)
 (color-theme-tomorrow)
@@ -27,6 +27,8 @@
 
 (show-paren-mode t)
 (global-rainbow-delimiters-mode)
+
+(wrap-region-mode t)
 
 (setq redisplay-dont-pause t
   scroll-margin 1
