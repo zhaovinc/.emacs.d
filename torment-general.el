@@ -1,6 +1,7 @@
 (require 'ido)
 (require 'highlight-symbol)
 (require 'highlight-parentheses)
+(require 'rainbow-delimiters)
 (require 'autopair)
 (require 'lusty-explorer)
 (require 'iedit)
@@ -19,7 +20,9 @@
 (global-linum-mode t)
 (tool-bar-mode 0)
 (window-numbering-mode 1)
-(highlight-parentheses-mode t)
+
+(show-paren-mode t)
+(global-rainbow-delimiters-mode)
 
 (setq redisplay-dont-pause t
   scroll-margin 1
