@@ -12,6 +12,8 @@
 (require 'textmate)
 (require 'eproject)
 (require 'eproject-extras)
+(require 'expand-region)
+
 
 (color-theme-initialize)
 (color-theme-tomorrow)
@@ -97,7 +99,8 @@
 (global-set-key (kbd "M-h") 'scroll-up)
 
 ;; Auto selection
-(global-set-key (kbd "M-e") 'extend-selection)
+;; (global-set-key (kbd "M-e") 'extend-selection)
+(global-set-key (kbd "M-e") 'er/expand-region)
 
 ;; Move to beginning/ending of buffer
 (global-set-key (kbd "M-<") 'beginning-of-buffer)
