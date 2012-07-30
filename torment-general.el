@@ -10,6 +10,8 @@
 (require 'color-theme)
 (require 'color-theme-tomorrow)
 (require 'textmate)
+(require 'eproject)
+(require 'eproject-extras)
 
 (color-theme-initialize)
 (color-theme-tomorrow)
@@ -43,7 +45,6 @@
 (setq inhibit-startup-message t)
 (setq frame-title-format "emacs@%b")
 (setq cua--rectangle-modifier-key 'control)
-(setq ruby-electric-expand-delimiters-list nil)
 
 (put 'set-goal-column 'disabled nil)
 

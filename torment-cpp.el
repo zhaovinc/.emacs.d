@@ -10,4 +10,11 @@
                                      "-IC:/MinGW/lib/gcc/mingw32/4.6.2/include/c++" 
                                      "-D__MSVCRT__=")))
 
-	  
+(add-hook 'c-mode-common-hook
+  (lambda() 
+    (local-set-key  (kbd "C-c o") 'ff-find-other-file)))
+     
+(add-hook 'c-mode-common-hook
+               (lambda ()
+                (font-lock-add-keywords nil
+                 '(("\\<\\(FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))))
