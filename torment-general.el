@@ -52,6 +52,12 @@
 
 (put 'set-goal-column 'disabled nil)
 
+;; Always start a new shell 
+(defadvice shell (around always-new-shell)
+  "Always start a new shell."
+  (let ((buffer (generate-new-buffer-name "*shell*"))) ad-do-it))
+
+(ad-activate 'shell)
 
 ;; Aliases 
 (defalias 'yes-or-no-p 'y-or-n-p)
