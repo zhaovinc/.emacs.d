@@ -1,5 +1,6 @@
 (require 'ruby-block)
 (require 'ruby-electric)
+(require 'rdebug)
 
 (setq rsense-home "$RSENSE_HOME")
 (require 'rsense)
