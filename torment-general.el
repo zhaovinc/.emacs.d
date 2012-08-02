@@ -158,14 +158,14 @@
 
 ;;; EMACS'S SPECIAL COMMANDS
 
-; Mark point.
+epea; Mark point.
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 ; Execute command
 (global-set-key (kbd "M-'") 'execute-extended-command)
 
 ; Repeat last command
-(global-set-key (kbd "M-.") 'repeat)
+(global-set-key (kbd "M-.") 'repeat-complex-command)
 
 ;;; --------------------------------------------------
 ;;; STANDARD SHORTCUTS
