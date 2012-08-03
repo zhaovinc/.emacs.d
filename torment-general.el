@@ -158,7 +158,7 @@
 
 ;;; EMACS'S SPECIAL COMMANDS
 
-epea; Mark point.
+;; Mark point.
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 ; Execute command
