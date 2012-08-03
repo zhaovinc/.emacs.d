@@ -11,4 +11,4 @@
 
 (add-hook 'org-mode-hook 
 		  (lambda ()
-			(local-set-key [M-e] 'er/expand-region)))
+			(define-key org-mode-map (kbd "M-e") 'er/expand-region)))
