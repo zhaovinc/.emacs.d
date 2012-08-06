@@ -14,6 +14,7 @@
 (require 'eproject-extras)
 (require 'expand-region)
 (require 'wrap-region)
+(require 'smex)
 
 (color-theme-initialize)
 (color-theme-tomorrow)
@@ -24,6 +25,8 @@
 (global-linum-mode t)
 (tool-bar-mode 0)
 (window-numbering-mode 1)
+
+(smex-initialize)
 
 (show-paren-mode t)
 (global-rainbow-delimiters-mode)
@@ -162,7 +165,8 @@
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
 ; Execute command
-(global-set-key (kbd "M-'") 'execute-extended-command)
+(global-set-key (kbd "M-'") 'smex)
+;; (global-set-key (kbd "M-'") 'execute-extended-command)
 
 ; Repeat last command
 (global-set-key (kbd "M-.") 'repeat-complex-command)
