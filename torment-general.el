@@ -105,7 +105,7 @@
 (global-set-key (kbd "C-a") 'beginning-of-line)
 (global-set-key (kbd "C-e") 'end-of-line)
 
-; Screen Scroll
+;; Screen Scroll
 (global-set-key (kbd "M-y") 'scroll-down)
 (global-set-key (kbd "M-h") 'scroll-up)
 
@@ -132,10 +132,10 @@
 ;; Delete previous/next char.
 (global-set-key (kbd "C-d") 'delete-char)
 
-; Delete previous/next word.
+;; Delete previous/next word.
 (global-set-key (kbd "C-w") 'backward-kill-word)
 
-; Copy Cut Paste, Paste previous
+;; Copy Cut Paste, Paste previous
 (global-set-key (kbd "M-x") 'kill-region)
 (global-set-key (kbd "M-c") 'kill-ring-save)
 (global-set-key (kbd "M-v") 'yank)
@@ -153,7 +153,7 @@
 
 ;;; Textual Transformation
 (global-set-key (kbd "M-P") 'mark-paragraph)
-;(global-set-key ergoemacs-shrink-whitespaces-key 'shrink-whitespaces)
+;;(global-set-key ergoemacs-shrink-whitespaces-key 'shrink-whitespaces)
 
 ;;; Imenu symbol
 (global-set-key (kbd "M-g") 'ido-goto-symbol)
@@ -164,12 +164,12 @@
 ;; Mark point.
 (global-set-key (kbd "M-SPC") 'set-mark-command)
 
-; Execute command
+;; Execute command
 (global-set-key (kbd "M-'") 'smex)
 ;; (global-set-key (kbd "M-'") 'execute-extended-command)
 
-; Repeat last command
-(global-set-key (kbd "M-.") 'repeat-complex-command)
+;; Repeat last command
+;; (global-set-key (kbd "M-.") 'repeat-complex-command)
 
 ;;; --------------------------------------------------
 ;;; STANDARD SHORTCUTS

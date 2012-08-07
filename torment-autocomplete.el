@@ -1,10 +1,11 @@
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
-(require 'etags-table)
 (require 'ac-company)
 (require 'dropdown-list)
 (require 'ac-anything)
 (require 'yasnippet)
+(require 'gtags)
+(require 'etags-table)
 
 (setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
 (yas/load-directory yas/root-directory)
@@ -14,9 +15,9 @@
 (load-file "~/.emacs.d/cedet/common/cedet.el")
 (global-ede-mode 1)
 
-;;(semantic-load-enable-minimum-features)
-;;(semantic-load-enable-code-helpers)
-;;(semantic-load-enable-excessive-code-helpers)
+(semantic-load-enable-minimum-features)
+(semantic-load-enable-code-helpers)
+(semantic-load-enable-excessive-code-helpers)
 
 (ac-config-default)
 
@@ -32,6 +33,13 @@
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map "\t" 'ac-complete)
 
+;; gtags
+
+(add-hook 'gtags-mode-hook 
+  (lambda()
+    (local-set-key (kbd "M-.") 'gtags-find-tag)   
+    (local-set-key (kbd "M-,") 'gtags-pop-stack))) 
+    
 
 ;;(setq yas/use-menu nil)
 ;;(setq yas/trigger-key nil)
