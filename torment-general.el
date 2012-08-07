@@ -10,8 +10,6 @@
 (require 'color-theme)
 (require 'color-theme-tomorrow)
 (require 'textmate)
-(require 'eproject)
-(require 'eproject-extras)
 (require 'expand-region)
 (require 'wrap-region)
 (require 'smex)
