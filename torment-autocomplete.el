@@ -1,8 +1,6 @@
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
-(require 'ac-company)
 (require 'dropdown-list)
-(require 'ac-anything)
 (require 'yasnippet)
 (require 'gtags)
 (require 'etags-table)
@@ -32,15 +30,8 @@
   
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map "\t" 'ac-complete)
-
-;; gtags
-
-(add-hook 'gtags-mode-hook 
-  (lambda()
-    (local-set-key (kbd "M-.") 'gtags-find-tag)   
-    (local-set-key (kbd "M-,") 'gtags-pop-stack))) 
     
-
+    
 ;;(setq yas/use-menu nil)
 ;;(setq yas/trigger-key nil)
 

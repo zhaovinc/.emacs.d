@@ -4,7 +4,7 @@
 (load "torment-utilities")
 (load "torment-general")
 (load "torment-autocomplete")
-(load "torment-anything")
+(load "torment-helm")
 (load "torment-git")
 (load "torment-xml")
 (load "torment-javascript")

@@ -223,7 +223,7 @@
 
 ;;; --------------------------------------------------
 ;;; anything
-(global-set-key (kbd "M-a") 'anything)
+;;;(global-set-key (kbd "M-a") 'anything)
 
 ;;; --------------------------------------------------
 ;;; isearch mode
