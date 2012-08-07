@@ -11,4 +11,6 @@
 
 (add-hook 'helm-gtags-mode-hook
 		  (lambda ()
+			(local-set-key (kbd "M-.") 'helm-gtags-find-tag)
+			(local-set-key (kbd "M-,") 'helm-gtags-pop-stack)
 			(local-set-key (kbd "M-O") 'helm-gtags-find-files)))
