@@ -1,8 +1,7 @@
 
-
-(load "torment-os")
 (load "torment-utilities")
 (load "torment-general")
+(load "torment-os")
 (load "torment-autocomplete")
 (load "torment-helm")
 (load "torment-git")
