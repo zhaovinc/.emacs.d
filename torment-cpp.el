@@ -14,9 +14,9 @@
                                      "-IC:/MinGW/lib/gcc/mingw32/4.6.2/include"
                                      "-IC:/MinGW/lib/gcc/mingw32/4.6.2/include/c++" 
                                      "-D__MSVCRT__=")))
-(if (equal system-type 'windows-nt)
+(if (equal system-type 'darwin)
 	(setq ac-clang-flags
-		  (mapcar (lambda (item) (concat "-I" item)
+		  (mapcar (lambda (item) (concat "-I" item))
 					(split-string "
  /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include
  /usr/include/c++/4.2.1
@@ -24,7 +24,7 @@
  /usr/local/include
  /Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include
  /usr/include
-")))))
+"))))
 
 
 (add-hook 'c-mode-common-hook
