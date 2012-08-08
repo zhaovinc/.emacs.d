@@ -13,10 +13,12 @@
 (require 'expand-region)
 (require 'wrap-region)
 (require 'smex)
+(require 'hide-mode-line)
 
 (color-theme-initialize)
 (color-theme-tomorrow)
 
+(hide-mode-line)
 (cua-mode t)
 (autopair-global-mode)
 (ido-mode t)

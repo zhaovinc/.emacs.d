@@ -15,7 +15,7 @@
 
 (semantic-load-enable-minimum-features)
 (semantic-load-enable-code-helpers)
-(semantic-load-enable-excessive-code-helpers)
+;;(semantic-load-enable-excessive-code-helpers)
 
 (ac-config-default)
 
@@ -26,8 +26,12 @@
 
 (add-to-list 'ac-modes 'nxml-mode)
 (add-to-list 'ac-modes 'nxhtml-mode)
-(add-to-list 'ac-modes 'objc-mode)
-  
+(add-to-list 'ac-modes 'c-mode)
+(add-to-list 'ac-modes 'cpp-mode)
+(add-to-list 'ac-modes 'org-mode)
+(add-to-list 'ac-modes 'js2-mode)
+(add-to-list 'ac-modes 'css-mode)
+
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map "\t" 'ac-complete)
     
