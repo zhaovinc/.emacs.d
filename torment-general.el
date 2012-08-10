@@ -14,6 +14,8 @@
 (require 'wrap-region)
 (require 'smex)
 (require 'hide-mode-line)
+(require 'inline-string-rectangle)
+(require 'mark-more-like-this)
 
 (color-theme-initialize)
 (color-theme-tomorrow-night-bright)
@@ -78,6 +80,12 @@
 (defalias 'er 'eval-region)
 (defalias 'ee 'eval-expression)
 (defalias 'els 'eval-last-sexp)
+
+
+;; Mark Multiple
+(global-set-key (kbd "C-<") 'mark-previous-like-this)
+(global-set-key (kbd "C->") 'mark-next-like-this)
+(global-set-key (kbd "C-*") 'mark-all-like-this)
 
 
 ;; Textmate Mode key  
