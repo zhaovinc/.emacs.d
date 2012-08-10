@@ -16,7 +16,7 @@
 (require 'hide-mode-line)
 
 (color-theme-initialize)
-(color-theme-tomorrow)
+(color-theme-tomorrow-night-bright)
 
 (hide-mode-line)
 (cua-mode t)
