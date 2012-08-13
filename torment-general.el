@@ -36,6 +36,7 @@
 
 (setq elscreen-display-tab nil)
 (setq elscreen-display-screen-number nil)
+(elscreen-set-prefix-key "\C-t")
 
 (wrap-region-mode t)
 
