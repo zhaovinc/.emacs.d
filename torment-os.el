@@ -12,3 +12,11 @@
 	  (setq mac-right-command-modifier 'meta)
 	  (setq ns-pop-up-frames nil) 
 	  (setq tidy-shell-program "/usr/bin/tidy")))
+
+
+(defun cygwin-shell ()
+  "Run cygwin bash in shell mode"
+  (interactive)
+  (let ((explicit-shell-file-name "c:/program files (x86)/git/bin/bash")
+		(explicit-bash-args '("-login" "-i")))
+	(call-interactively 'shell)))
