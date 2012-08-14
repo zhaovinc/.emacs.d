@@ -27,6 +27,7 @@
 (ido-mode t)
 (global-linum-mode t)
 (tool-bar-mode 0)
+(menu-bar-mode 0)
 (window-numbering-mode 1)
 
 (smex-initialize)
