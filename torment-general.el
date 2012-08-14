@@ -17,6 +17,7 @@
 (require 'hide-mode-line)
 (require 'inline-string-rectangle)
 (require 'mark-more-like-this)
+(require 'idle-highlight-mode)
 
 (color-theme-initialize)
 (color-theme-tomorrow-night-bright)
