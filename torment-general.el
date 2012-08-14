@@ -1,5 +1,5 @@
 (require 'ido)
-(require 'elscreen)
+(require 'escreen)
 (require 'highlight-symbol)
 (require 'highlight-parentheses)
 (require 'rainbow-delimiters)
@@ -34,9 +34,8 @@
 (show-paren-mode t)
 (global-rainbow-delimiters-mode)
 
-(setq elscreen-display-tab nil)
-(setq elscreen-display-screen-number nil)
-(elscreen-set-prefix-key "\C-t")
+(setq escreen-prefix-char "\C-t")
+(escreen-install)
 
 (wrap-region-mode t)
 
