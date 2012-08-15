@@ -2,7 +2,6 @@
 (require 'auto-complete-clang)
 (require 'dropdown-list)
 (require 'yasnippet)
-(require 'gtags)
 (require 'etags-table)
 
 (setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
