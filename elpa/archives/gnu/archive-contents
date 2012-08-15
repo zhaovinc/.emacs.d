@@ -137,3 +137,4 @@
  (xclip .
 	[(1 0)
 	 nil "Emacs Interface to XClip" single]))
+

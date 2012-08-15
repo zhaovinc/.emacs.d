@@ -8,8 +8,7 @@
 (require 'iedit)
 (require 'hungry-delete)
 (require 'window-numbering)
-(require 'color-theme)
-(require 'color-theme-tomorrow)
+(require 'color-theme-sanityinc-tomorrow)
 (require 'textmate)
 (require 'expand-region)
 (require 'wrap-region)
@@ -19,8 +18,7 @@
 (require 'mark-more-like-this)
 (require 'idle-highlight-mode)
 
-(color-theme-initialize)
-(color-theme-tomorrow-night-bright)
+(color-theme-sanityinc-tomorrow-bright)
 
 (hide-mode-line)
 (cua-mode t)
