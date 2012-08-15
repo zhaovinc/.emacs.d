@@ -1,5 +1,0 @@
-#name do |param| ... end
-# --
-do |${param}|
-   $0
-end

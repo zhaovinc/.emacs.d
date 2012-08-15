@@ -1,4 +1,0 @@
-
-#name : has_many : ... 
-# --
-has_many :${class}
