@@ -5,6 +5,5 @@ url
 backups
 *~
 session.*
-elpa
 *.elc
 .DS_Store
