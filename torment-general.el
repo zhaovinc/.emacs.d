@@ -13,14 +13,12 @@
 (require 'expand-region)
 (require 'wrap-region)
 (require 'smex)
-(require 'hide-mode-line)
 (require 'inline-string-rectangle)
 (require 'mark-more-like-this)
 (require 'idle-highlight-mode)
 
 (color-theme-sanityinc-tomorrow-bright)
 
-(hide-mode-line)
 (cua-mode t)
 (autopair-global-mode)
 (ido-mode t)
