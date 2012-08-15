@@ -1,8 +1,8 @@
 ac-comphist.dat
 anything-c-adaptive-history
-auto-save-list
+auto-save-list/
 url
-elpa/archives/*
+elpa/archives/
 backups
 *~
 session.*
