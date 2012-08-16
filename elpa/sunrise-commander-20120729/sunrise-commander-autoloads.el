@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (sr-term-cd-program sr-term-cd-newterm sr-term-cd
 ;;;;;;  sr-term sunrise-cd sr-dired sunrise sr-virtual-mode sr-mode)
-;;;;;;  "sunrise-commander" "sunrise-commander.el" (20523 24996))
+;;;;;;  "sunrise-commander" "sunrise-commander.el" (20524 65100))
 ;;; Generated autoloads from sunrise-commander.el
 
 (autoload 'sr-mode "sunrise-commander" "\
@@ -245,49 +245,49 @@ Open a NEW terminal using PROGRAM as the shell.
 ;;;***
 
 ;;;### (autoloads nil "sunrise-x-buttons" "sunrise-x-buttons.el"
-;;;;;;  (20523 24996))
+;;;;;;  (20524 65100))
 ;;; Generated autoloads from sunrise-x-buttons.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-buttons))
 
 ;;;***
 
-;;;### (autoloads nil "sunrise-x-loop" "sunrise-x-loop.el" (20523
-;;;;;;  24996))
+;;;### (autoloads nil "sunrise-x-loop" "sunrise-x-loop.el" (20524
+;;;;;;  65100))
 ;;; Generated autoloads from sunrise-x-loop.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-loop))
 
 ;;;***
 
-;;;### (autoloads nil "sunrise-x-mirror" "sunrise-x-mirror.el" (20523
-;;;;;;  24996))
+;;;### (autoloads nil "sunrise-x-mirror" "sunrise-x-mirror.el" (20524
+;;;;;;  65100))
 ;;; Generated autoloads from sunrise-x-mirror.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-mirror))
 
 ;;;***
 
 ;;;### (autoloads nil "sunrise-x-modeline" "sunrise-x-modeline.el"
-;;;;;;  (20523 24996))
+;;;;;;  (20524 65101))
 ;;; Generated autoloads from sunrise-x-modeline.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-modeline))
 
 ;;;***
 
 ;;;### (autoloads nil "sunrise-x-popviewer" "sunrise-x-popviewer.el"
-;;;;;;  (20523 24996))
+;;;;;;  (20524 65101))
 ;;; Generated autoloads from sunrise-x-popviewer.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-popviewer))
 
 ;;;***
 
-;;;### (autoloads nil "sunrise-x-tabs" "sunrise-x-tabs.el" (20523
-;;;;;;  24996))
+;;;### (autoloads nil "sunrise-x-tabs" "sunrise-x-tabs.el" (20524
+;;;;;;  65101))
 ;;; Generated autoloads from sunrise-x-tabs.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-tabs))
 
 ;;;***
 
 ;;;### (autoloads (sr-tree-mode) "sunrise-x-tree" "sunrise-x-tree.el"
-;;;;;;  (20523 24996))
+;;;;;;  (20524 65101))
 ;;; Generated autoloads from sunrise-x-tree.el
 
 (autoload 'sr-tree-mode "sunrise-x-tree" "\
@@ -299,14 +299,14 @@ Tree view for the Sunrise Commander file manager.
 ;;;***
 
 ;;;### (autoloads nil "sunrise-x-w32-addons" "sunrise-x-w32-addons.el"
-;;;;;;  (20523 24996))
+;;;;;;  (20524 65101))
 ;;; Generated autoloads from sunrise-x-w32-addons.el
  (eval-after-load 'sunrise-commander '(sr-extend-with 'sunrise-x-w32-addons))
 
 ;;;***
 
 ;;;### (autoloads nil nil ("sunrise-commander-pkg.el" "sunrise-x-checkpoints.el"
-;;;;;;  "sunrise-x-old-checkpoints.el") (20523 24996 596000))
+;;;;;;  "sunrise-x-old-checkpoints.el") (20524 65101 544000))
 
 ;;;***
 

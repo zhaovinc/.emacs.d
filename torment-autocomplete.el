@@ -44,7 +44,7 @@
 ;;                             yas/ido-prompt
 ;;                             yas/completing-prompt))
 
-(yas/initialize)
+(yas--initialize)
 
 (defvar ac-source-etags
   '((candidates . (lambda ()

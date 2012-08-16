@@ -46,7 +46,7 @@ type\\|theme\\|var\\|group\\|custom\\|const\\|method\\|class\\)"
     (python-mode . ,helm-c-browse-code-regexp-python))
   "Alist to store regexps for browsing code corresponding \
 to a specific `major-mode'."
-  :type 'list
+  :type '(alist :key-type symbol :value-type regexp)
   :group 'helm-regexp)
 
 
@@ -175,7 +175,6 @@ i.e Don't replace inside a word, regexp is surrounded with \\bregexp\\b."
   `((name . "Occur")
     (init . helm-c-occur-init)
     (candidates-in-buffer)
-    (migemo)
     (get-line . helm-c-occur-get-line)
     (display-to-real . helm-c-display-to-real-line)
     (action . (("Go to Line" . helm-c-action-line-goto)
