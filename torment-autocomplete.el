@@ -24,12 +24,14 @@
 ;;(setq ac-delay 0.2)
 
 (add-to-list 'ac-modes 'nxml-mode)
-(add-to-list 'ac-modes 'nxhtml-mode)
+(add-to-list 'ac-modes 'prog-mode)
 (add-to-list 'ac-modes 'c-mode)
 (add-to-list 'ac-modes 'cpp-mode)
 (add-to-list 'ac-modes 'org-mode)
 (add-to-list 'ac-modes 'js2-mode)
 (add-to-list 'ac-modes 'css-mode)
+(add-to-list 'ac-modes 'ruby-mode)
+(add-to-list 'ac-modes 'shell-mode)
 
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map "\t" 'ac-complete)
