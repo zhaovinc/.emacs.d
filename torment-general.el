@@ -1,4 +1,5 @@
 (require 'ido)
+(require 'bm)
 (require 'escreen)
 (require 'highlight-symbol)
 (require 'highlight-parentheses)
@@ -65,6 +66,13 @@
   (let ((buffer (generate-new-buffer-name "*shell*"))) ad-do-it))
 
 (ad-activate 'shell)
+
+
+;; Bookmarks
+(global-set-key (kbd "<C-f2>") 'bm-toggle)
+(global-set-key (kbd "<f2>")   'bm-next)
+(global-set-key (kbd "<S-f2>") 'bm-previous)
+
 
 ;; Aliases 
 (defalias 'yes-or-no-p 'y-or-n-p)

@@ -1,10 +1,12 @@
 ac-comphist.dat
 anything-c-adaptive-history
-auto-save-list/
-url
-archive-contents
+auto-save-list
+/url
+tramp
+/elpa/archives/melpa/archive-contents
 backups
 *~
 session.*
 *.elc
 .DS_Store
+/bookmarks
