@@ -3,7 +3,8 @@ anything-c-adaptive-history
 /auto-save-list
 /url
 /tramp
-archive-contents
+/elpa
+/marmalade
 backups
 *~
 session.*
