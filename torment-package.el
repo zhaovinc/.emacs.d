@@ -1,12 +1,14 @@
 (require 'package)
 
+(defvar tromey '("tromey" . "http://tromey.com/elpa/"))
 (defvar marmalade '("marmalade" . "http://marmalade-repo.org/packages/"))
 (defvar gnu '("gnu" . "http://elpa.gnu.org/packages/"))
 (defvar melpa '("melpa" . "http://melpa.milkbox.net/packages/"))
 
 ;; Add marmalade to package repos
 (add-to-list 'package-archives marmalade t)
-(add-to-list 'package-archives melpa t)
+(add-to-list 'package-archives tromey)
+(add-to-list 'package-archives melpa)
 
 (defun packages-install (&rest packages)
   (mapc (lambda (package)
@@ -35,6 +37,7 @@
 	  (cons 'idle-highlight-mode marmalade)
 	  (cons 'iedit marmalade)
 	  (cons 'js2-mode marmalade)
+	  (cons 'lusty-explorer tromey)
 	  (cons 'magit marmalade)
 	  (cons 'mark-multiple marmalade)
 	  (cons 'popup marmalade)
@@ -45,7 +48,9 @@
 	  (cons 'ruby-electric marmalade)
 	  (cons 'ruby-tools marmalade) 
 	  (cons 'smex marmalade)
+	  (cons 'smooth-scrolling marmalade)
 	  (cons 'sunrise-commander marmalade)
 	  (cons 'textmate marmalade)
 	  (cons 'wrap-region marmalade)
+	  (cons 'window-number marmalade)
 	  (cons 'yasnippet marmalade)))

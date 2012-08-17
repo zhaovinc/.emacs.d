@@ -8,7 +8,7 @@
 (require 'lusty-explorer)
 (require 'iedit)
 (require 'hungry-delete)
-(require 'window-numbering)
+(require 'window-number)
 (require 'color-theme-sanityinc-tomorrow)
 (require 'textmate)
 (require 'expand-region)
@@ -17,6 +17,15 @@
 (require 'inline-string-rectangle)
 (require 'mark-more-like-this)
 (require 'idle-highlight-mode)
+(require 'smooth-scrolling)
+(require 'undo-tree)
+
+
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
 
 (color-theme-sanityinc-tomorrow-bright)
 
@@ -26,7 +35,7 @@
 (global-linum-mode t)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(window-numbering-mode 1)
+(window-number-meta-mode)
 
 (smex-initialize)
 
@@ -37,6 +46,9 @@
 (escreen-install)
 
 (wrap-region-mode t)
+
+(setq undo-tree-mode-lighter "")
+(global-undo-tree-mode)
 
 (setq redisplay-dont-pause t
   scroll-margin 1
