@@ -92,6 +92,7 @@
 (defalias 'gf 'grep-find)
 (defalias 'fd 'find-dired)
 
+(defalias 'rr 'replace-regexp)
 (defalias 'qr 'query-replace)
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'lml 'list-matching-lines)
