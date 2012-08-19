@@ -40,6 +40,8 @@
 (require-package 'popup)
 (require-package 'rainbow-delimiters)
 (require-package 'rainbow-mode)
+(require-package 'rinari)
+(require-package 'restclient)
 (require-package 'rsense)
 (require-package 'ruby-block)
 (require-package 'ruby-electric)

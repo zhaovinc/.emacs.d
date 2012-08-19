@@ -19,6 +19,7 @@
 (require 'idle-highlight-mode)
 (require 'smooth-scrolling)
 (require 'undo-tree)
+(require 'restclient)
 
 
 (setq locale-coding-system 'utf-8)
