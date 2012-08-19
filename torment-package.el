@@ -50,6 +50,8 @@
 (require-package 'smooth-scrolling)
 (require-package 'sunrise-commander)
 (require-package 'textmate)
+(require-package 'undo-tree)
 (require-package 'wrap-region)
 (require-package 'window-number)
 (require-package 'yasnippet)
+
