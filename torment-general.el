@@ -35,7 +35,10 @@
 (ido-mode t)
 (global-linum-mode t)
 (tool-bar-mode 0)
-(menu-bar-mode 0)
+
+(if (equal system-type 'windows-nt) 
+	(menu-bar-mode 0))
+
 (window-number-meta-mode)
 
 (smex-initialize)

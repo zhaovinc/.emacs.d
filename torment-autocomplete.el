@@ -4,8 +4,10 @@
 (require 'yasnippet)
 (require 'etags-table)
 
-(setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
-(yas/load-directory yas/root-directory)
+;; yas root directory before ELPA (obsolete)
+
+;;(setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
+;;(yas/load-directory yas/root-directory)
 
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
 
