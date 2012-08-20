@@ -46,6 +46,7 @@
 (require-package 'ruby-block)
 (require-package 'ruby-electric)
 (require-package 'ruby-tools) 
+(require-package 'slime)
 (require-package 'smex)
 (require-package 'smooth-scrolling)
 (require-package 'sunrise-commander)
