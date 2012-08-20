@@ -36,8 +36,8 @@
 (global-linum-mode t)
 (tool-bar-mode 0)
 
-(if (equal system-type 'windows-nt) 
-	(menu-bar-mode 0))
+;; (if (equal system-type 'windows-nt) 
+;; 	(menu-bar-mode 0))
 
 (window-number-meta-mode)
 
@@ -93,6 +93,7 @@
 ;; Aliases 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(defalias 'cd 'comment-dwin)
 (defalias 'gf 'grep-find)
 (defalias 'fd 'find-dired)
 
