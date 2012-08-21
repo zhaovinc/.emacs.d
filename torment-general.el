@@ -39,6 +39,9 @@
 ;; (if (equal system-type 'windows-nt) 
 ;; 	(menu-bar-mode 0))
 
+(setq split-height-threshold nil)
+(setq split-width-threshold 80)
+
 (window-number-meta-mode)
 
 (smex-initialize)
