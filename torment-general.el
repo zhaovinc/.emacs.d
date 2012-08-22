@@ -17,8 +17,8 @@
 (require 'inline-string-rectangle)
 (require 'mark-more-like-this)
 (require 'idle-highlight-mode)
-(require 'smooth-scrolling)
 (require 'undo-tree)
+(require 'sml-modeline)
 (require 'restclient)
 
 
@@ -35,6 +35,9 @@
 (ido-mode t)
 (global-linum-mode t)
 (tool-bar-mode 0)
+
+(sml-modeline-mode 1)
+(scroll-bar-mode -1)
 
 ;; (if (equal system-type 'windows-nt) 
 ;; 	(menu-bar-mode 0))
@@ -58,9 +61,9 @@
 (global-undo-tree-mode)
 
 (setq redisplay-dont-pause t
-  scroll-margin 1
+  scroll-margin 6
   scroll-step 1
-  scroll-conservatively 10000
+  scroll-conservatively 100000
   scroll-preserve-screen-position 1)
 
 (setq backup-directory-alist

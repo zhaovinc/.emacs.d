@@ -1,4 +1,5 @@
 (require 'magit)
+(require 'mo-git-blame)
 
 (setq magit-save-some-buffers nil
       magit-process-popup-time 60

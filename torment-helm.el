@@ -2,6 +2,14 @@
 (require 'helm-gtags)
 (require 'helm-git)
 
+(define-key helm-map (kbd "M-i") 'helm-previous-line)
+(define-key helm-map (kbd "M-k") 'helm-next-line)
+(define-key helm-map (kbd "M-n") 'helm-next-source)
+(define-key helm-map (kbd "M-p") 'helm-previous-source)
+(define-key helm-map (kbd "M-h") 'helm-next-page)
+(define-key helm-map (kbd "M-y") 'helm-previous-page)
+
+
 (add-hook 'c-mode-common-hook
 		  (lambda ()
 			(helm-gtags-mode)))
