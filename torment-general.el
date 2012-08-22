@@ -112,6 +112,7 @@
 (defalias 'ee 'eval-expression)
 (defalias 'els 'eval-last-sexp)
 
+(defalias 'ms 'magit-status)
 
 ;; Mark Multiple
 (global-set-key (kbd "C-<") 'mark-previous-like-this)

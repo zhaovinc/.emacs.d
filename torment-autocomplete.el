@@ -18,6 +18,8 @@
 (semantic-load-enable-code-helpers)
 ;;(semantic-load-enable-excessive-code-helpers)
 
+(yas-global-mode 1)
+
 (ac-config-default)
 
 (setq ac-auto-start nil)
@@ -46,7 +48,6 @@
 ;;                             yas/ido-prompt
 ;;                             yas/completing-prompt))
 
-(yas--initialize)
 
 (defvar ac-source-etags
   '((candidates . (lambda ()
