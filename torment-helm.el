@@ -20,7 +20,7 @@
 
 (add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
-			(global-set-key (kbd "M-O") 'helm-git-find-files)))
+			(local-set-key (kbd "M-O") 'helm-git-find-files)))
 
 
 (add-hook 'helm-gtags-mode-hook
