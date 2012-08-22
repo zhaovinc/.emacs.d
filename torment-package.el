@@ -39,6 +39,7 @@
 (require-package 'magit)
 (require-package 'mark-multiple)
 (require-package 'mo-git-blame)
+(require-package 'paredit)
 (require-package 'rainbow-delimiters)
 (require-package 'rainbow-mode)
 (require-package 'rinari)
