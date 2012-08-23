@@ -2,13 +2,15 @@
 (require 'helm-gtags)
 (require 'helm-git)
 
-(define-key helm-map (kbd "M-i") 'helm-previous-line)
-(define-key helm-map (kbd "M-k") 'helm-next-line)
-(define-key helm-map (kbd "M-n") 'helm-next-source)
-(define-key helm-map (kbd "M-p") 'helm-previous-source)
-(define-key helm-map (kbd "M-h") 'helm-next-page)
-(define-key helm-map (kbd "M-y") 'helm-previous-page)
 
+(eval-after-load 'helm
+  '(progn
+	 (define-key helm-map (kbd "M-i") 'helm-previous-line)
+	 (define-key helm-map (kbd "M-k") 'helm-next-line)
+	 (define-key helm-map (kbd "M-n") 'helm-next-source)
+	 (define-key helm-map (kbd "M-p") 'helm-previous-source)
+	 (define-key helm-map (kbd "M-h") 'helm-next-page)
+	 (define-key helm-map (kbd "M-y") 'helm-previous-page))
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
@@ -17,6 +19,10 @@
 (setq helm-c-gtags-path-style 'relative)
 (setq helm-c-gtags-ignore-case t)
 (setq helm-c-gtags-read-only t)
+
+
+(global-set-key (kbd "M-I") 'helm-imenu)
+
 
 (add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
