@@ -3,6 +3,7 @@
 (require 'escreen)
 (require 'highlight-symbol)
 (require 'highlight-parentheses)
+(require 'mic-paren)
 (require 'rainbow-delimiters)
 (require 'autopair)
 (require 'lusty-explorer)
@@ -49,7 +50,7 @@
 
 (smex-initialize)
 
-(show-paren-mode t)
+(paren-activate)
 (global-rainbow-delimiters-mode)
 
 (setq escreen-prefix-char "\C-t")

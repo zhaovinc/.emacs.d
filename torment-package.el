@@ -17,12 +17,14 @@
 
 (package-initialize)
 
+(require-package 'ac-slime)
 (require-package 'auto-complete)
 (require-package 'auto-complete-clang)
 (require-package 'autopair)
 (require-package 'bm)
 (require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'deft)
+(require-package 'elisp-slime-nav)
 (require-package 'escreen)
 (require-package 'etags-table)
 (require-package 'expand-region)
@@ -38,6 +40,7 @@
 (require-package 'lusty-explorer)
 (require-package 'magit)
 (require-package 'mark-multiple)
+(require-package 'mic-paren)
 (require-package 'mo-git-blame)
 (require-package 'paredit)
 (require-package 'rainbow-delimiters)
@@ -57,4 +60,3 @@
 (require-package 'wrap-region)
 (require-package 'window-number)
 (require-package 'yasnippet)
-

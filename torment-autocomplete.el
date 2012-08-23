@@ -36,6 +36,10 @@
 (add-to-list 'ac-modes 'css-mode)
 (add-to-list 'ac-modes 'ruby-mode)
 (add-to-list 'ac-modes 'shell-mode)
+(add-to-list 'ac-modes 'emacs-lisp-mode)
+(add-to-list 'ac-modes 'lisp-mode)
+(add-to-list 'ac-modes 'slime-repl-mode)
+
 
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map "\t" 'ac-complete)
