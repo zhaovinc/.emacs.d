@@ -1,9 +1,5 @@
 
 (add-hook 'c-mode-common-hook
-   (lambda ()
-      (gtags-mode 1)))
-
-(add-hook 'c-mode-common-hook
 		  (lambda ()
 			(add-to-list 'ac-sources 'ac-source-clang)
 			(add-to-list 'ac-sources 'ac-source-yasnippet)))

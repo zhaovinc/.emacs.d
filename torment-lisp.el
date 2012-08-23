@@ -4,6 +4,12 @@
 (require 'elisp-slime-nav)
 
 
+(if (equal system-type 'windows-nt)	
+	(progn
+	  (setq inferior-lisp-program "c:/sbcl/sbcl.exe")
+	  (slime-setup)))
+
+
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))
 
@@ -13,18 +19,17 @@
      (define-key paredit-mode-map (kbd "M-r") 'isearch-backward)))
 
 
-(if (equal system-type 'windows-nt)	
-	(progn
-	  (setq inferior-lisp-program "c:/sbcl/sbcl.exe")
-	  (slime-setup)))
+;;(suspend-mode-during-cua-rect-selection 'paredit-mode)
 
 (add-hook 'lisp-mode-hook
 		  (lambda ()
-			'enable-paredit-mode))
+			(enable-paredit-mode)
+			(autopair-mode -1)))
 
 (add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
-			'enable-paredit-mode))
+			(enable-paredit-mode)
+			(autopair-mode -1)))
 
 
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
