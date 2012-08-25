@@ -10,7 +10,7 @@
 	 (define-key helm-map (kbd "M-n") 'helm-next-source)
 	 (define-key helm-map (kbd "M-p") 'helm-previous-source)
 	 (define-key helm-map (kbd "M-h") 'helm-next-page)
-	 (define-key helm-map (kbd "M-y") 'helm-previous-page))
+	 (define-key helm-map (kbd "M-y") 'helm-previous-page)))
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
