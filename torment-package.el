@@ -43,6 +43,7 @@
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)
 (require-package 'paredit)
+(require-package 'pretty-symbols-mode)
 (require-package 'rainbow-delimiters)
 (require-package 'rainbow-mode)
 (require-package 'rinari)
