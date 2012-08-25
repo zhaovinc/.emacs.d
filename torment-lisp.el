@@ -15,6 +15,9 @@
 
 (eval-after-load 'paredit
   '(progn
+	 (define-key paredit-mode-map (kbd "C-j") 'paredit-join-sexp)
+	 (define-key paredit-mode-map (kbd "C-s") 'paredit-split-sexp)
+	 (define-key paredit-mode-map (kbd "C-l") 'paredit-splice-sexp)
      (define-key paredit-mode-map (kbd "M-s") 'isearch-forward)
      (define-key paredit-mode-map (kbd "M-r") 'isearch-backward)))
 
