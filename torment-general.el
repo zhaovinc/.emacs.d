@@ -21,7 +21,6 @@
 (require 'undo-tree)
 (require 'sml-modeline)
 (require 'restclient)
-(load "pretty-symbols-mode")
 
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
