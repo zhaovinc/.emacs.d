@@ -3,8 +3,8 @@
 (require 'paredit)
 (require 'elisp-slime-nav)
 
-(add-hook 'emacs-lisp-mode-hook 'pretty-symbols-mode)
-(add-hook 'lisp-mode-hook 'pretty-symbols-mode)
+;; (add-hook 'emacs-lisp-mode-hook 'pretty-symbols-mode)
+;; (add-hook 'lisp-mode-hook 'pretty-symbols-mode)
 
 
 (if (equal system-type 'windows-nt)	
