@@ -116,6 +116,7 @@
 (defalias 'els 'eval-last-sexp)
 
 (defalias 'ms 'magit-status)
+(defalias 'ttl 'toggle-truncate-lines)
 
 ;; Mark Multiple
 (global-set-key (kbd "C-<") 'mark-previous-like-this)
