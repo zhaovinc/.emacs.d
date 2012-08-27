@@ -6,12 +6,17 @@
 ;; (add-hook 'emacs-lisp-mode-hook 'pretty-symbols-mode)
 ;; (add-hook 'lisp-mode-hook 'pretty-symbols-mode)
 
+(setq slime-net-coding-system 'utf-8-unix)
 
 (if (equal system-type 'windows-nt)	
 	(progn
-	  (setq inferior-lisp-program "c:/sbcl/sbcl.exe")
-	  (slime-setup)))
+	  (setq inferior-lisp-program "c:/sbcl/sbcl.exe")))
 
+(if (equal system-type 'darwin)
+	(progn
+	  (setq inferior-lisp-program "/usr/local/bin/ccl -K utf-8")))
+
+(slime-setup)
 
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))

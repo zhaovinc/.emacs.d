@@ -22,6 +22,7 @@
 (require 'sml-modeline)
 (require 'restclient)
 
+(set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
