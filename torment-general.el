@@ -97,6 +97,22 @@
 (global-set-key (kbd "<S-f2>") 'bm-previous)
 
 
+;; keyboard macro
+
+(defun start-or-end-kbd-macro ()
+  (interactive)
+  (if defining-kbd-macro
+      (end-kbd-macro nil) (start-kbd-macro nil)))
+
+(defun end-if-needed-and-run-kbd-macro (arg)
+  (interactive "p")
+  (if defining-kbd-macro (end-kbd-macro nil))
+  (call-last-kbd-macro arg))
+
+(global-set-key (kbd "<f7>") 'start-or-end-kbd-macro)
+(global-set-key (kbd "<f8>") 'end-if-needed-and-run-kbd-macro)
+
+
 ;; Aliases 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
