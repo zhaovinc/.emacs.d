@@ -36,6 +36,7 @@
 (require-package 'hungry-delete)
 (require-package 'idle-highlight-mode)
 (require-package 'iedit)
+(require-package 'impatient-mode)
 (require-package 'js2-mode)
 (require-package 'lusty-explorer)
 (require-package 'magit)

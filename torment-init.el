@@ -6,6 +6,7 @@
 (load "torment-autocomplete")
 (load "torment-helm")
 (load "torment-git")
+(load "torment-html")
 (load "torment-xml")
 (load "torment-javascript")
 (load "torment-css")
