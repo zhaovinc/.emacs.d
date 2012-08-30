@@ -55,6 +55,7 @@
 (require-package 'smex)
 (require-package 'sml-modeline)
 (require-package 'sunrise-commander)
+(require-package 'textile-mode)
 (require-package 'textmate)
 (require-package 'undo-tree)
 (require-package 'wrap-region)
