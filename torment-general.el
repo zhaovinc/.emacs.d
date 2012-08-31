@@ -21,6 +21,7 @@
 (require 'undo-tree)
 (require 'sml-modeline)
 (require 'restclient)
+(require 'graphviz-dot-mode)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -30,6 +31,11 @@
 (prefer-coding-system 'utf-8)
 
 (color-theme-sanityinc-tomorrow-bright)
+
+(setq frame-title-format
+  '((:eval (system-name)) ": " (:eval (if (buffer-file-name)
+						  (abbreviate-file-name (buffer-file-name))
+						"%b"))))
 
 (cua-mode t)
 (autopair-global-mode)

@@ -28,6 +28,7 @@
 (require-package 'escreen)
 (require-package 'etags-table)
 (require-package 'expand-region)
+(require-package 'graphviz-dot-mode)
 (require-package 'helm)
 (require-package 'helm-git)
 (require-package 'helm-gtags)
