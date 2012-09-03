@@ -16,7 +16,8 @@
 	(progn
 	  (setq inferior-lisp-program "/usr/local/bin/ccl -K utf-8")))
 
-(slime-setup)
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
+
 
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))
