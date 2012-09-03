@@ -22,6 +22,7 @@
 (require 'sml-modeline)
 (require 'restclient)
 (require 'graphviz-dot-mode)
+(require 'maxframe)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -31,6 +32,8 @@
 (prefer-coding-system 'utf-8)
 
 (color-theme-sanityinc-tomorrow-bright)
+
+(add-hook 'window-setup-hook 'maximize-frame t)
 
 (setq frame-title-format
   '((:eval (system-name)) ": " (:eval (if (buffer-file-name)

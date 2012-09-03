@@ -42,6 +42,7 @@
 (require-package 'lusty-explorer)
 (require-package 'magit)
 (require-package 'mark-multiple)
+(require-package 'maxframe)
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)
 (require-package 'paredit)
