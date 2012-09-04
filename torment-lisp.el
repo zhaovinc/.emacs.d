@@ -3,10 +3,10 @@
 (require 'paredit)
 (require 'elisp-slime-nav)
 
-;; (add-hook 'emacs-lisp-mode-hook 'pretty-symbols-mode)
-;; (add-hook 'lisp-mode-hook 'pretty-symbols-mode)
-
 (setq slime-net-coding-system 'utf-8-unix)
+(setq slime-protocol-version 'ignore)
+(setq slime-complete-symbol*-fancy t)
+(setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
 
 (if (equal system-type 'windows-nt)	
 	(progn
