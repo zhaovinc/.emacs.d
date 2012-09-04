@@ -23,6 +23,7 @@
 (require 'restclient)
 (require 'graphviz-dot-mode)
 (require 'maxframe)
+(require 'cycbuf)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -98,6 +99,10 @@
   (let ((buffer (generate-new-buffer-name "*shell*"))) ad-do-it))
 
 (ad-activate 'shell)
+
+;; Buffer switch
+(global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer)
+(global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer)
 
 
 ;; Bookmarks

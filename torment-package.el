@@ -23,6 +23,7 @@
 (require-package 'autopair)
 (require-package 'bm)
 (require-package 'color-theme-sanityinc-tomorrow)
+(require-package 'cycbuf)
 (require-package 'deft)
 (require-package 'elisp-slime-nav)
 (require-package 'escreen)
