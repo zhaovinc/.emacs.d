@@ -1,3 +1,4 @@
+
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
 (require 'dropdown-list)
@@ -42,7 +43,7 @@
 
 
 (global-set-key (kbd "M-/") 'auto-complete)
-(define-key ac-completing-map "\t" 'ac-complete)
+(define-key ac-completing-map [tab] 'ac-complete)
 (define-key ac-completing-map "\M-i" 'ac-previous)
 (define-key ac-completing-map "\M-k" 'ac-next)
 (define-key ac-completing-map "\M-s" 'ac-isearch)
