@@ -73,7 +73,7 @@
 (global-undo-tree-mode)
 
 (setq redisplay-dont-pause t
-  scroll-margin 6
+  scroll-margin 10
   scroll-step 1
   scroll-conservatively 100000
   scroll-preserve-screen-position 1)
