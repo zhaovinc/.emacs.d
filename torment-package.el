@@ -18,6 +18,7 @@
 (package-initialize)
 
 (require-package 'ac-slime)
+(require-package 'ace-jump-mode)
 (require-package 'auto-complete)
 (require-package 'auto-complete-clang)
 (require-package 'autopair)

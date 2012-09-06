@@ -24,6 +24,7 @@
 (require 'graphviz-dot-mode)
 (require 'maxframe)
 (require 'cycbuf)
+(require 'ace-jump-mode)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -275,12 +276,16 @@
 (global-set-key (kbd "C-0") '(lambda()(interactive)(opacity-modify)))
 
 ;;; --------------------------------------------------
+;;; ace jump mode
+(global-set-key (kbd "M-m") 'ace-jump-mode)
+
+;;; --------------------------------------------------
 ;;; tag navigation
 ;(global-set-key (kbd "M-??") 'pop-tag-mark)
 
 ;;; --------------------------------------------------
 ;;; paren matching
-(global-set-key (kbd "M-m") 'move-to-matching-paren)
+;; (global-set-key (kbd "M-??") 'move-to-matching-paren)
 
 ;;; --------------------------------------------------
 ;;; anything
