@@ -51,11 +51,11 @@
 (sml-modeline-mode 1)
 (scroll-bar-mode -1)
 
-;; (if (equal system-type 'windows-nt) 
-;; 	(menu-bar-mode 0))
+(if (equal system-type 'windows-nt) 
+	(menu-bar-mode 0))
 
 (setq split-height-threshold nil)
-(setq split-width-threshold 80)
+(setq split-width-threshold 85)
 
 (window-number-meta-mode)
 
