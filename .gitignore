@@ -11,3 +11,4 @@ session.*
 *.elc
 .DS_Store
 /bookmarks
+.session

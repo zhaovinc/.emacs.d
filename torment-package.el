@@ -19,6 +19,7 @@
 
 (require-package 'ac-slime)
 (require-package 'ace-jump-mode)
+(require-package 'auto-indent-mode)
 (require-package 'auto-complete)
 (require-package 'auto-complete-clang)
 (require-package 'autopair)
@@ -61,7 +62,6 @@
 (require-package 'sml-modeline)
 (require-package 'sunrise-commander)
 (require-package 'textile-mode)
-(require-package 'textmate)
 (require-package 'undo-tree)
 (require-package 'wrap-region)
 (require-package 'window-number)

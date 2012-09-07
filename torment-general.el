@@ -11,7 +11,6 @@
 (require 'hungry-delete)
 (require 'window-number)
 (require 'color-theme-sanityinc-tomorrow)
-(require 'textmate)
 (require 'expand-region)
 (require 'wrap-region)
 (require 'smex)
@@ -26,6 +25,7 @@
 (require 'cycbuf)
 (require 'ace-jump-mode)
 (require 'session)
+(require 'auto-indent-mode)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -40,9 +40,9 @@
 (add-hook 'window-setup-hook 'maximize-frame t)
 
 (setq frame-title-format
-  '((:eval (system-name)) ": " (:eval (if (buffer-file-name)
-						  (abbreviate-file-name (buffer-file-name))
-						"%b"))))
+	  '((:eval (system-name)) ": " (:eval (if (buffer-file-name)
+											  (abbreviate-file-name (buffer-file-name))
+											"%b"))))
 
 (cua-mode t)
 (autopair-global-mode)
@@ -70,15 +70,16 @@
 (escreen-install)
 
 (wrap-region-mode t)
+(auto-indent-global-mode)
 
 (setq undo-tree-mode-lighter "")
 (global-undo-tree-mode)
 
 (setq redisplay-dont-pause t
-  scroll-margin 10
-  scroll-step 1
-  scroll-conservatively 100000
-  scroll-preserve-screen-position 1)
+	  scroll-margin 10
+	  scroll-step 1
+	  scroll-conservatively 100000
+	  scroll-preserve-screen-position 1)
 
 (setq backup-directory-alist
 	  `((".*" . ,temporary-file-directory)))
@@ -141,17 +142,19 @@
 (global-set-key (kbd "C->") 'mark-next-like-this)
 (global-set-key (kbd "C-*") 'mark-all-like-this)
 
+;; Nifty textmate mode binding 
+(global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)
 
-;; Textmate Mode key  
-(global-set-key (kbd "C-M-t") 'textmate-clear-cache)
-(global-set-key (kbd "C-M-]") 'align)
-(global-set-key (kbd "C-M-[") 'indent-according-to-mode)
-(global-set-key (kbd "M-]")  'textmate-shift-right)
-(global-set-key (kbd "M-[") 'textmate-shift-left)
-(global-set-key (kbd "M-\\") 'comment-or-uncomment-region-or-line)
-(global-set-key (kbd "M-L") 'textmate-select-line)
-(global-set-key (kbd "M-t") 'textmate-goto-file)
-(global-set-key (kbd "M-T") 'textmate-goto-symbol)
+;; Textmate Mode key (obsolete)
+;; (global-set-key (kbd "C-M-t") 'textmate-clear-cache)
+;; (global-set-key (kbd "C-M-]") 'align)
+;; (global-set-key (kbd "C-M-[") 'indent-according-to-mode)
+;; (global-set-key (kbd "M-]")  'textmate-shift-right)
+;; (global-set-key (kbd "M-[") 'textmate-shift-left)
+;; (global-set-key (kbd "M-\\") 'comment-or-uncomment-region-or-line)
+;; (global-set-key (kbd "M-L") 'textmate-select-line)
+;; (global-set-key (kbd "M-t") 'textmate-goto-file)
+;; (global-set-key (kbd "M-T") 'textmate-goto-symbol)
 
 ;; Single char cursor movement
 (global-set-key (kbd "M-j") 'backward-char)
