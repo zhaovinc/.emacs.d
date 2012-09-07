@@ -1,3 +1,4 @@
+(require 'ack-and-a-half)
 (require 'ido)
 (require 'bm)
 (require 'escreen)
@@ -115,7 +116,10 @@
 (global-set-key (kbd "<S-f2>") 'bm-previous)
 
 
-;; Aliases 
+;; Aliases
+(defalias 'ack 'ack-and-a-half)
+(defalias 'ack-same 'ack-and-a-half-same)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (defalias 'cd 'comment-dwin)
