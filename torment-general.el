@@ -122,10 +122,6 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-(defalias 'cd 'comment-dwin)
-(defalias 'gf 'grep-find)
-(defalias 'fd 'find-dired)
-
 (defalias 'rr 'replace-regexp)
 (defalias 'qr 'query-replace)
 (defalias 'qrr 'query-replace-regexp)
@@ -136,7 +132,6 @@
 (defalias 'eb 'eval-buffer)
 (defalias 'er 'eval-region)
 (defalias 'ee 'eval-expression)
-(defalias 'els 'eval-last-sexp)
 
 (defalias 'ms 'magit-status)
 (defalias 'ttl 'toggle-truncate-lines)
