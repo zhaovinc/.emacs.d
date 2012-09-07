@@ -25,6 +25,7 @@
 (require 'maxframe)
 (require 'cycbuf)
 (require 'ace-jump-mode)
+(require 'session)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -35,6 +36,7 @@
 
 (color-theme-sanityinc-tomorrow-bright)
 
+(add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)
 
 (setq frame-title-format
