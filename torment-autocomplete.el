@@ -10,6 +10,12 @@
 ;;(setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
 ;;(yas/load-directory yas/root-directory)
 
+(set-face-background 'ac-candidate-face "#141414")
+(set-face-foreground 'ac-candidate-face "#f6f3e8")
+(set-face-background 'ac-selection-face "#64a8d8")
+
+(set-face-background 'popup-tip-face "#64a8d8")
+
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
 
 (load-file "~/.emacs.d/cedet/common/cedet.el")
