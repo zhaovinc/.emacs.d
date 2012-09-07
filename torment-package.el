@@ -2,7 +2,7 @@
 
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
-;;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
     
 (defun require-package (package &optional min-version no-refresh)
   "Ask elpa to install given PACKAGE."

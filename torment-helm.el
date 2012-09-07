@@ -26,6 +26,10 @@
 (global-set-key (kbd "M-I") 'helm-imenu)
 
 
+(add-hook 'helm-after-update-hook
+		  (lambda ()
+			(toggle-truncate-lines t)))
+
 (add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
 			(local-set-key (kbd "M-O") 'helm-git-find-files)))

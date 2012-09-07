@@ -102,8 +102,8 @@
 (ad-activate 'shell)
 
 ;; Buffer switch
-(global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer)
-(global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer)
+(global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer-no-timeout)
+(global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer-no-timeout)
 
 
 ;; Bookmarks
