@@ -71,7 +71,9 @@
 (escreen-install)
 
 (wrap-region-mode t)
+
 (auto-indent-global-mode)
+(setq auto-indent-current-pairs nil)
 
 (setq undo-tree-mode-lighter "")
 (global-undo-tree-mode)
@@ -119,6 +121,7 @@
 ;; Aliases
 (defalias 'ack 'ack-and-a-half)
 (defalias 'ack-same 'ack-and-a-half-same)
+(defalias 'ggrep 'vc-git-grep)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -308,7 +311,7 @@
  
 ;;; --------------------------------------------------
 ;;; isearch mode 
- (add-hook 'Info-mode-hook
+(add-hook 'Info-mode-hook
  (lambda ()
  (define-key Info-mode-map (kbd "M-s") 'isearch-forward)
  (define-key Info-mode-map (kbd "M-r") 'isearch-backward)

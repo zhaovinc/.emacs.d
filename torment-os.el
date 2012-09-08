@@ -28,3 +28,9 @@
 
 (if (equal system-type 'windows-nt) 
 	(global-set-key [f12] 'toggle-full-screen-win32))
+
+
+(if (equal system-type 'windows-nt) 
+	(defun ack-and-a-half-shell-quote (string)
+	  "Workaround for the issue that ack does not work with pattern with single quote in win32"
+	  (message string)))
