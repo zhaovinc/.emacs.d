@@ -58,6 +58,7 @@
 (require-package 'ruby-electric)
 (require-package 'ruby-tools)
 (require-package 'session)
+(require-package 'slim-mode)
 (require-package 'slime)
 (require-package 'smex)
 (require-package 'sml-modeline)

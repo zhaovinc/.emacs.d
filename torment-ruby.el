@@ -1,4 +1,5 @@
 (require 'ruby-electric)
+(require 'slim-mode)
 ;;(require 'rdebug)
 
 (setq rsense-home "$RSENSE_HOME")
