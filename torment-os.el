@@ -1,3 +1,4 @@
+(require 'ispell)
 
 (if (equal system-type 'windows-nt)	
 	(progn
@@ -34,3 +35,8 @@
 	(defun ack-and-a-half-shell-quote (string)
 	  "Workaround for the issue that ack does not work with pattern with single quote in win32"
 	  (message string)))
+
+
+(setq ispell-program-name "aspell")
+(setq ispell-extra-args '("--sug-mode=ultra"))
+(setq ispell-personal-dictionary "~/.ispell")
