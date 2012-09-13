@@ -49,9 +49,9 @@
 
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
-
 (add-hook 'emacs-lisp-mode-hook
 		  (lambda ()
+			(rainbow-mode)
 			(elisp-slime-nav-mode t)
 			(local-set-key [return] 'newline-and-indent)
 			(add-to-list 'ac-sources 'ac-source-emacs-lisp-features)))
