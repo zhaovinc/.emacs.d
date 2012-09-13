@@ -1,14 +1,8 @@
-
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
 (require 'dropdown-list)
 (require 'yasnippet)
 (require 'etags-table)
-
-;; yas root directory before ELPA (obsolete)
-
-;;(setq yas/root-directory "~/.emacs.d/yasnippet/snippets")
-;;(yas/load-directory yas/root-directory)
 
 (set-face-background 'ac-candidate-face "#141414")
 (set-face-foreground 'ac-candidate-face "#f6f3e8")
@@ -26,11 +20,11 @@
 ;;(semantic-load-enable-excessive-code-helpers)
 
 (setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"
-        (concat (file-name-as-directory
-				 (file-name-directory
-				  (find-library-name "auto-complete")))
-				"snippets")))
+      (list "~/.emacs.d/snippets"
+            (concat (file-name-as-directory
+                     (file-name-directory
+                      (find-library-name "yasnippet")))
+                    "snippets")))
 
 (yas-global-mode 1)
 
@@ -64,10 +58,9 @@
 ;;(setq yas/use-menu nil)
 ;;(setq yas/trigger-key nil)
 
-;;(setq yas/prompt-functions '(yas/dropdown-prompt
-;;                             yas/ido-prompt
-;;                             yas/completing-prompt))
-
+(setq yas/prompt-functions '(yas/dropdown-prompt
+                            yas/ido-prompt
+                            yas/completing-prompt))
 
 (defvar ac-source-etags
   '((candidates . (lambda ()
@@ -76,9 +69,3 @@
     (selection-face . ac-selection-face)
     (requires . 3))
   "etags source")
-
-
-
-
-
-
