@@ -26,7 +26,7 @@
 (global-set-key (kbd "M-I") 'helm-imenu)
 
 
-(add-hook 'helm-after-update-hook
+(add-hook 'helm-after-initialize-hook
 		  (lambda ()
 			(toggle-truncate-lines t)))
 
