@@ -25,6 +25,13 @@
 (semantic-load-enable-code-helpers)
 ;;(semantic-load-enable-excessive-code-helpers)
 
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"
+        (concat (file-name-as-directory
+				 (file-name-directory
+				  (find-library-name "auto-complete")))
+				"snippets")))
+
 (yas-global-mode 1)
 
 (ac-config-default)
