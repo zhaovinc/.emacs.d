@@ -9,7 +9,7 @@
 (setq slime-complete-symbol*-fancy t)
 (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
 
-(if (equal system-type 'windows-nt)	
+(if (equal system-type 'windows-nt)
 	(progn
 	  (setq inferior-lisp-program "c:/sbcl/sbcl.exe")))
 
@@ -31,8 +31,6 @@
      (define-key paredit-mode-map (kbd "M-s") 'isearch-forward)
      (define-key paredit-mode-map (kbd "M-r") 'isearch-backward)))
 
-
-;;(suspend-mode-during-cua-rect-selection 'paredit-mode)
 
 (add-hook 'lisp-mode-hook
 		  (lambda ()

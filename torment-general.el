@@ -45,6 +45,7 @@
 											  (abbreviate-file-name (buffer-file-name))
 											"%b"))))
 
+(delete-selection-mode 1)
 (cua-mode t)
 (autopair-global-mode)
 (ido-mode t)
