@@ -96,7 +96,6 @@
 (setq make-backup-files nil)
 (setq cua-enable-cua-keys nil)
 (setq inhibit-startup-message t)
-(setq frame-title-format "emacs@%b")
 (setq cua--rectangle-modifier-key 'control)
 
 (put 'set-goal-column 'disabled nil)
