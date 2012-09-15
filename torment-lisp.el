@@ -23,6 +23,8 @@
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))
 
+(defalias 'ss 'slime-selector)
+
 (eval-after-load 'paredit
   '(progn
 	 (define-key paredit-mode-map (kbd "C-j") 'paredit-join-sexps)
@@ -53,3 +55,4 @@
 			(elisp-slime-nav-mode t)
 			(local-set-key [return] 'newline-and-indent)
 			(add-to-list 'ac-sources 'ac-source-emacs-lisp-features)))
+
