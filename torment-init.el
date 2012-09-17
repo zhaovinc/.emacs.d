@@ -16,3 +16,4 @@
 (load "torment-lisp")
 (load "torment-notes")
 (load "torment-file-management")
+(load "torment-gnus")

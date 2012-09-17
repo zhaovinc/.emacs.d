@@ -59,7 +59,7 @@
 	(menu-bar-mode 0))
 
 (setq split-height-threshold nil)
-(setq split-width-threshold 85)
+(setq split-width-threshold 100)
 
 (window-number-meta-mode)
 
