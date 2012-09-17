@@ -23,7 +23,7 @@
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))
 
-(defalias 'ss 'slime-selector)
+(global-set-key (kbd "C-c s") 'slime-selector)
 
 (eval-after-load 'paredit
   '(progn
