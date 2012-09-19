@@ -17,3 +17,4 @@
 (load "torment-notes")
 (load "torment-file-management")
 (load "torment-gnus")
+(load "torment-dict")
