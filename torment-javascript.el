@@ -1,2 +1,10 @@
-(autoload 'js2-mode "js2-mode" nil t)
+(require 'js2-mode)
+(require 'slime-js)
+
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+(define-key js2-mode-map [f5] 'slime-js-reload)
+
+(add-hook 'js2-mode-hook
+		  (lambda ()
+			(slime-js-minor-mode 1)))
