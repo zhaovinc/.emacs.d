@@ -1,5 +1,3 @@
-;;(require 'slime)
-;;(require 'slime-fancy)
 (require 'ac-slime)
 (require 'paredit)
 (require 'elisp-slime-nav)
@@ -18,7 +16,6 @@
 	  (setq inferior-lisp-program "/usr/local/bin/ccl -K utf-8")))
 
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
-;;(slime-setup '(slime-fancy))
 
 (add-to-list 'auto-mode-alist '("\\.gnus$" . emacs-lisp-mode))
 (add-to-list 'auto-mode-alist '("\\.emacs$" . emacs-lisp-mode))
