@@ -287,6 +287,11 @@
 (global-set-key (kbd "M-m") 'ace-jump-mode)
 
 ;;; --------------------------------------------------
+;;; font size zoom
+(global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "C-=") 'text-scale-increase)
+
+;;; --------------------------------------------------
 ;;; tag navigation
 ;(global-set-key (kbd "M-??") 'pop-tag-mark)
 
