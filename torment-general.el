@@ -14,9 +14,8 @@
 (require 'color-theme-sanityinc-tomorrow)
 (require 'expand-region)
 (require 'wrap-region)
+(require 'multiple-cursors)
 (require 'smex)
-(require 'inline-string-rectangle)
-(require 'mark-more-like-this)
 (require 'idle-highlight-mode)
 (require 'undo-tree)
 (require 'sml-modeline)
@@ -140,9 +139,9 @@
 (defalias 'ttl 'toggle-truncate-lines)
 
 ;; Mark Multiple
-(global-set-key (kbd "C-<") 'mark-previous-like-this)
-(global-set-key (kbd "C->") 'mark-next-like-this)
-(global-set-key (kbd "C-*") 'mark-all-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-*") 'mc/mark-all-like-this)
 
 ;; Nifty textmate mode binding 
 (global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)

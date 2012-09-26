@@ -46,7 +46,7 @@
 (require-package 'js2-mode)
 (require-package 'lusty-explorer)
 (require-package 'magit)
-(require-package 'mark-multiple)
+(require-package 'multiple-cursors)
 (require-package 'maxframe)
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)

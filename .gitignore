@@ -12,3 +12,4 @@ session.*
 .DS_Store
 /bookmarks
 .session
+.mc-lists.el
