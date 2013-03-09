@@ -106,6 +106,14 @@
 
 (ad-activate 'shell)
 
+
+;; Highlight changes
+(global-highlight-changes-mode t)
+(setq highlight-changes-visibility-initial-state nil)
+
+(global-set-key (kbd "<f6>") 'highlight-changes-visible-mode)
+
+
 ;; Buffer switch
 (global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer-no-timeout)
 (global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer-no-timeout)
