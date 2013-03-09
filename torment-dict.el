@@ -14,5 +14,8 @@
 (setq sdcv-dictionary-simple-list   
       '("牛津现代英汉双解词典" "WordNet"))
 
+(setq sdcv-dictionary-complete-list   
+      '("牛津现代英汉双解词典" "WordNet"))
 
+(setq aaa "dfdfd")
 
