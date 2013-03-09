@@ -61,6 +61,7 @@
 (require-package 'session)
 (require-package 'slim-mode)
 (require-package 'smex)
+(require-package 'slime)
 (require-package 'sml-modeline)
 (require-package 'sunrise-commander)
 (require-package 'textile-mode)
