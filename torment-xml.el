@@ -1,7 +1,6 @@
 ;;(load "nxhtml/autostart.el")
 
 (require 'rename-sgml-tag)
-(require 'fold-dwim-org)
 
 (add-hook 'sgml-mode-hook
           (lambda ()
