@@ -30,10 +30,7 @@
 		  (lambda ()
 			(toggle-truncate-lines t)))
 
-(add-hook 'emacs-lisp-mode-hook
-		  (lambda ()
-			(local-set-key (kbd "M-O") 'helm-git-find-files)))
-
+(global-set-key (kbd "M-O") 'helm-git-find-files)
 
 (add-hook 'helm-gtags-mode-hook
 		  (lambda ()

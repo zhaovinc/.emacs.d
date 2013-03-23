@@ -68,4 +68,5 @@
 (require-package 'undo-tree)
 (require-package 'wrap-region)
 (require-package 'window-number)
+(require-package 'yaml-mode)
 (require-package 'yasnippet)

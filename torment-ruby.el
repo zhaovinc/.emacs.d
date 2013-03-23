@@ -1,6 +1,8 @@
 (require 'ruby-electric)
 (require 'slim-mode)
-;;(require 'rdebug)
+(require 'yaml-mode)
+
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 (setq rsense-home "$RSENSE_HOME")
 (require 'rsense)
