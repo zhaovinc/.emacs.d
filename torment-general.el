@@ -1,4 +1,3 @@
-(require 'ack-and-a-half)
 (require 'ido)
 (require 'bm)
 (require 'escreen)
@@ -126,8 +125,6 @@
 
 
 ;; Aliases
-(defalias 'ack 'ack-and-a-half)
-(defalias 'ack-same 'ack-and-a-half-same)
 (defalias 'ggrep 'vc-git-grep)
 
 (defalias 'yes-or-no-p 'y-or-n-p)

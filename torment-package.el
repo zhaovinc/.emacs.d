@@ -3,7 +3,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-    
+
 (defun require-package (package &optional min-version no-refresh)
   "Ask elpa to install given PACKAGE."
   (if (package-installed-p package min-version)
@@ -18,7 +18,6 @@
 (package-initialize)
 
 (require-package 'ac-slime)
-(require-package 'ack-and-a-half)
 (require-package 'ace-jump-mode)
 (require-package 'auto-indent-mode)
 (require-package 'auto-complete)
@@ -66,6 +65,7 @@
 (require-package 'sunrise-commander)
 (require-package 'textile-mode)
 (require-package 'undo-tree)
+(require-package 'web-mode)
 (require-package 'wrap-region)
 (require-package 'window-number)
 (require-package 'yaml-mode)
