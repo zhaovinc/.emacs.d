@@ -1,6 +1,5 @@
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
-(require 'dropdown-list)
 (require 'yasnippet)
 (require 'etags-table)
 
