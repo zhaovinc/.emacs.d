@@ -11,5 +11,4 @@
                            (rainbow-mode)))
 
 (add-hook 'css-mode-hook
-		  (lambda ()
-			(skewer-css-mode)))
+		  (lambda ()))

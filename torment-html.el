@@ -9,7 +9,6 @@
     (setq httpd-root "~/Sandbox/html"))
 
 (add-hook 'html-mode-hook
-          (lambda ()
-            (skewer-html-mode)))
+          (lambda ()))
 
 (add-to-list 'magic-mode-alist '("<!DOCTYPE html .+DTD XHTML .+>" . nxml-mode))
