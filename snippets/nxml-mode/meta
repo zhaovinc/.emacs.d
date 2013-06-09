@@ -1,0 +1,5 @@
+# contributor: zhao vincent
+# name: <meta content-type="..." content="..." />
+# key: meta
+# --
+<meta http-equiv="${1:content-type}" content="${2:text/html; charset=utf-8}" />

@@ -1,0 +1,5 @@
+# contributor: zhao vincent
+# name: <script type="..." src="..." />
+# key: script
+# --
+<script type="${1:text/javascript}" src="${2:source}">$0</script>

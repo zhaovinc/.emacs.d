@@ -46,6 +46,7 @@
 (add-to-list 'ac-modes 'emacs-lisp-mode)
 (add-to-list 'ac-modes 'lisp-mode)
 (add-to-list 'ac-modes 'slime-repl-mode)
+(add-to-list 'ac-modes 'inferior-moz-mode)
 
 
 (global-set-key (kbd "M-/") 'auto-complete)
