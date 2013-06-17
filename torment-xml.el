@@ -2,6 +2,8 @@
 
 (require 'rename-sgml-tag)
 
+(add-to-list 'rng-schema-locating-files "~/.emacs.d/schemas/schemas.xml")
+
 (add-hook 'sgml-mode-hook
           (lambda ()
             (define-key sgml-mode-map (kbd "C-c C-r") 'rename-sgml-tag)))
