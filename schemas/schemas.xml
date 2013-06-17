@@ -5,5 +5,7 @@
   <uri pattern="build.xml"
        uri="~/.emacs.d/schemas/ant-1.6.rnc"/>
   <uri pattern="*.html"
-       uri="file:///usr/share/emacs/24.1/etc/schema/xhtml.rnc"/>
+       uri="~/.emacs.d/schemas/xhtml.rnc"/>
+  <uri pattern="web.xml"
+       uri="~/.emacs.d/schemas/web-app_2_4.rnc"/>
 </locatingRules>
