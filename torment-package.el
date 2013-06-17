@@ -30,6 +30,7 @@
 (require-package 'dictionary)
 (require-package 'elisp-slime-nav)
 (require-package 'escreen)
+(require-package 'eclim)
 (require-package 'etags-table)
 (require-package 'expand-region)
 (require-package 'graphviz-dot-mode)
