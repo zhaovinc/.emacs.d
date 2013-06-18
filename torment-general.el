@@ -33,7 +33,10 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(color-theme-sanityinc-tomorrow-bright)
+(defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
+(defalias 'bright-theme 'color-theme-sanityinc-tomorrow-eighties)
+
+(dark-theme)
 
 (add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)

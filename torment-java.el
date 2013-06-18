@@ -10,3 +10,8 @@
 
 (ac-emacs-eclim-config)
 
+(require 'web-mode)
+
+(add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
+
+

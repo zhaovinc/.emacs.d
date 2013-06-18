@@ -41,6 +41,7 @@
 (add-to-list 'ac-modes 'org-mode)
 (add-to-list 'ac-modes 'js2-mode)
 (add-to-list 'ac-modes 'css-mode)
+(add-to-list 'ac-modes 'web-mode)
 (add-to-list 'ac-modes 'ruby-mode)
 (add-to-list 'ac-modes 'shell-mode)
 (add-to-list 'ac-modes 'emacs-lisp-mode)
