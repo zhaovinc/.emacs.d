@@ -4,9 +4,9 @@
 
 (global-eclim-mode)
 
-(setq help-at-pt-display-when-idle t)
-(setq help-at-pt-timer-delay 0.1)
-(help-at-pt-set-timer)
+(setq help-at-pt-display-when-idle nil)
+;; (setq help-at-pt-timer-delay 3)
+;; (help-at-pt-set-timer)
 
 (ac-emacs-eclim-config)
 

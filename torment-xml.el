@@ -2,7 +2,8 @@
 
 (require 'rename-sgml-tag)
 
-(add-to-list 'rng-schema-locating-files "~/.emacs.d/schemas/schemas.xml")
+(eval-after-load 'rng-loc
+	'(add-to-list 'rng-schema-locating-files "~/.emacs.d/schemas/schemas.xml"))
 
 (add-hook 'sgml-mode-hook
           (lambda ()

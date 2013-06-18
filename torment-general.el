@@ -34,9 +34,9 @@
 (prefer-coding-system 'utf-8)
 
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
-(defalias 'bright-theme 'color-theme-sanityinc-tomorrow-eighties)
+(defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
 
-(dark-theme)
+(night-theme)
 
 (add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)

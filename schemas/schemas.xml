@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
   <uri pattern="pom.xml"
-       uri="~/.emacs.d/schemas/maven-v4_0_0.rnc"/>
+       uri="maven-v4_0_0.rnc"/>
   <uri pattern="build.xml"
-       uri="~/.emacs.d/schemas/ant-1.6.rnc"/>
+       uri="ant-1.6.rnc"/>
   <uri pattern="*.html"
-       uri="~/.emacs.d/schemas/xhtml.rnc"/>
+       uri="xhtml.rnc"/>
   <uri pattern="web.xml"
-       uri="~/.emacs.d/schemas/web-app_2_4.rnc"/>
+       uri="web-app_2_4.rnc"/>
 </locatingRules>
