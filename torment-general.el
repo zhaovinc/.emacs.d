@@ -11,6 +11,7 @@
 (require 'hungry-delete)
 (require 'window-number)
 (require 'color-theme-sanityinc-tomorrow)
+(require 'color-theme-sanityinc-solarized)
 (require 'expand-region)
 (require 'wrap-region)
 (require 'multiple-cursors)
@@ -35,8 +36,7 @@
 
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
 (defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
-
-(night-theme)
+(defalias 'day-theme 'color-theme-sanityinc-tomorrow-day)
 
 (add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)
