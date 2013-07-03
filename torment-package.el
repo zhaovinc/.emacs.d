@@ -61,6 +61,7 @@
 (require-package 'ruby-tools)
 (require-package 'session)
 (require-package 'slim-mode)
+(require-package 'smart-mode-line)
 (require-package 'smex)
 (require-package 'skewer-mode)
 (require-package 'slime)

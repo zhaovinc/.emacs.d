@@ -26,6 +26,7 @@
 (require 'ace-jump-mode)
 (require 'session)
 (require 'auto-indent-mode)
+(require 'smart-mode-line)
 
 (set-language-environment "utf-8")
 (setq locale-coding-system 'utf-8)
@@ -33,6 +34,8 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+(add-hook 'after-init-hook 'sml/setup)
 
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
 (defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
@@ -48,6 +51,7 @@
 
 (delete-selection-mode 1)
 (cua-mode t)
+(electric-pair-mode 0)
 (autopair-global-mode)
 (ido-mode t)
 (global-linum-mode t)
