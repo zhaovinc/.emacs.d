@@ -36,6 +36,9 @@
 (prefer-coding-system 'utf-8)
 
 (add-hook 'after-init-hook 'sml/setup)
+(setq sml/shorten-modes t)
+(setq sml/shorten-directory nil)
+(setq sml/mode-width 3)
 
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
 (defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
@@ -58,6 +61,8 @@
 (tool-bar-mode 0)
 
 (sml-modeline-mode 1)
+(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
+
 (scroll-bar-mode -1)
 
 (if (equal system-type 'windows-nt) 
