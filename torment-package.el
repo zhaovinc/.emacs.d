@@ -24,6 +24,7 @@
 (require-package 'auto-complete-clang)
 (require-package 'autopair)
 (require-package 'bm)
+(require-package 'csharp-mode)
 (require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'cycbuf)
