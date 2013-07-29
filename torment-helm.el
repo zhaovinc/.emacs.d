@@ -14,9 +14,9 @@
 	 (define-key helm-map (kbd "<escape>")		'helm-keyboard-quit)
 	 (define-key helm-map (kbd "C-w")			'backward-kill-word)))
 
-(add-hook 'c-mode-common-hook
-		  (lambda ()
-			(helm-gtags-mode)))
+;; (add-hook 'c-mode-common-hook
+;; 		  (lambda ()
+;; 			(helm-gtags-mode)))
 
 (setq helm-c-gtags-path-style 'relative)
 (setq helm-c-gtags-ignore-case t)
