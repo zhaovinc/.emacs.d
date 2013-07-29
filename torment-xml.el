@@ -1,13 +1,13 @@
 ;;(load "nxhtml/autostart.el")
 
-(require 'rename-sgml-tag)
+;;(require 'rename-sgml-tag)
 
 (eval-after-load 'rng-loc
 	'(add-to-list 'rng-schema-locating-files "~/.emacs.d/schemas/schemas.xml"))
 
-(add-hook 'sgml-mode-hook
-          (lambda ()
-            (define-key sgml-mode-map (kbd "C-c C-r") 'rename-sgml-tag)))
+;;(add-hook 'sgml-mode-hook
+;;         (lambda ()
+;;            (define-key sgml-mode-map (kbd "C-c C-r") 'rename-sgml-tag)))
 
 (add-hook 'html-mode-hook
 		  (lambda ()
