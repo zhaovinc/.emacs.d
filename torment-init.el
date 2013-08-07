@@ -18,4 +18,5 @@
 (load "torment-notes")
 (load "torment-file")
 (load "torment-gnus")
+(load "torment-tramp")
 ;;(load "torment-dict")

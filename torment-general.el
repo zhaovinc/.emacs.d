@@ -28,12 +28,10 @@
 (require 'auto-indent-mode)
 (require 'smart-mode-line)
 
-(set-language-environment "utf-8")
-(setq locale-coding-system 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
+(set-default buffer-file-coding-system 'utf-8-unix)
+(set-default-coding-systems 'utf-8-unix)
+(prefer-coding-system 'utf-8-unix)
+(set-default default-buffer-file-coding-system 'utf-8-unix)
 
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
@@ -286,6 +284,10 @@
 (global-set-key (kbd "<escape>") 'delete-other-windows)
 (global-set-key (kbd "M-+") 'toggle-truncate-lines)
 
+
+;;; --------------------------------------------------
+;;; reserve the key for tmux
+(global-unset-key (kbd "C-m"))
 
 ;;; --------------------------------------------------
 ;;; symbol highlight
