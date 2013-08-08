@@ -61,8 +61,7 @@
 (sml-modeline-mode 1)
 (setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
-(if (equal system-type 'windows-nt) 
-	(menu-bar-mode 0))
+(menu-bar-mode 0)
 
 (setq split-height-threshold nil)
 (setq split-width-threshold 120)
