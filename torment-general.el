@@ -61,8 +61,6 @@
 (sml-modeline-mode 1)
 (setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
-(scroll-bar-mode -1)
-
 (if (equal system-type 'windows-nt) 
 	(menu-bar-mode 0))
 
@@ -287,7 +285,7 @@
 
 ;;; --------------------------------------------------
 ;;; reserve the key for tmux
-(global-unset-key (kbd "C-m"))
+(global-unset-key (kbd "C-v"))
 
 ;;; --------------------------------------------------
 ;;; symbol highlight
