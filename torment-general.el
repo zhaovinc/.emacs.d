@@ -155,8 +155,10 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-*") 'mc/mark-all-like-this)
 
-;; Nifty textmate mode binding 
+;; For windows and osx 
 (global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)
+;; For linux
+(global-set-key (kbd "<M-RET") 'auto-indent-eol-newline)
 
 ;; Textmate Mode key (obsolete)
 ;; (global-set-key (kbd "C-M-t") 'textmate-clear-cache)
