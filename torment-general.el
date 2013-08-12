@@ -158,7 +158,7 @@
 ;; For windows and osx 
 (global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)
 ;; For linux
-(global-set-key (kbd "<M-RET") 'auto-indent-eol-newline)
+(global-set-key (kbd "<M-RET>") 'auto-indent-eol-newline)
 
 ;; Textmate Mode key (obsolete)
 ;; (global-set-key (kbd "C-M-t") 'textmate-clear-cache)
