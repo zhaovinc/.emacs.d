@@ -1,7 +1,8 @@
 (require 'helm-config)
 (require 'helm-gtags)
 (require 'helm-git)
-
+(require 'projectile)
+(require 'helm-projectile)
 
 (eval-after-load 'helm
   '(progn
@@ -22,6 +23,7 @@
 (setq helm-c-gtags-ignore-case t)
 (setq helm-c-gtags-read-only t)
 
+(projectile-global-on)
 
 (global-set-key (kbd "M-I") 'helm-imenu)
 
@@ -30,7 +32,8 @@
 		  (lambda ()
 			(toggle-truncate-lines t)))
 
-(global-set-key (kbd "M-O") 'helm-git-find-files)
+;; (global-set-key (kbd "M-O") 'helm-git-find-files)
+(global-set-key (kbd "M-O") 'helm-projectile)
 
 (add-hook 'helm-gtags-mode-hook
 		  (lambda ()
