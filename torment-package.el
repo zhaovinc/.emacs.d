@@ -55,6 +55,7 @@
 (require-package 'mo-git-blame)
 (require-package 'omnisharp)
 (require-package 'paredit)
+(require-package 'php-mode)
 (require-package 'projectile)
 (require-package 'powershell-mode)
 (require-package 'rainbow-delimiters)
