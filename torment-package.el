@@ -61,6 +61,7 @@
 (require-package 'rainbow-delimiters)
 (require-package 'rainbow-mode)
 (require-package 'rinari)
+(require-package 'rhtml-mode)
 (require-package 'restclient)
 (require-package 'rsense)
 (require-package 'ruby-electric)

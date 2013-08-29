@@ -50,6 +50,15 @@
 											  (abbreviate-file-name (buffer-file-name))
 											"%b"))))
 
+;; Open all files in read-only mode
+(add-hook 'find-file-hook
+          '(lambda ()
+             (when (and (buffer-file-name)
+                        (file-exists-p (buffer-file-name))
+                        (file-writable-p (buffer-file-name)))
+               (message "Toggle to read-only mode")
+               (toggle-read-only 1))))
+
 (delete-selection-mode 1)
 (cua-mode t)
 (electric-pair-mode 0)
