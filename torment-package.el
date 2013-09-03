@@ -18,6 +18,7 @@
 (package-initialize)
 
 (require-package 'ac-slime)
+(require-package 'apache-mode)
 (require-package 'ace-jump-mode)
 (require-package 'auto-indent-mode)
 (require-package 'auto-complete)
