@@ -18,6 +18,7 @@
 (package-initialize)
 
 (require-package 'ac-slime)
+(require-package 'ag)
 (require-package 'apache-mode)
 (require-package 'ace-jump-mode)
 (require-package 'auto-indent-mode)
@@ -76,6 +77,7 @@
 (require-package 'sml-modeline)
 ;;(require-package 'sunrise-commander)
 (require-package 'textile-mode)
+(require-package 'tidy)
 (require-package 'undo-tree)
 (require-package 'web-mode)
 (require-package 'wrap-region)

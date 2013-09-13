@@ -15,6 +15,8 @@
 	 (define-key helm-map (kbd "<escape>")		'helm-keyboard-quit)
 	 (define-key helm-map (kbd "C-w")			'backward-kill-word)))
 
+(define-key helm-find-files-map (kbd "M-i") 'helm-previous-line)
+
 ;; (add-hook 'c-mode-common-hook
 ;; 		  (lambda ()
 ;; 			(helm-gtags-mode)))
