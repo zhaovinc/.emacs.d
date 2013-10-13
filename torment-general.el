@@ -87,7 +87,8 @@
 
 (wrap-region-mode t)
 
-(auto-indent-global-mode)
+;;(auto-indent-global-mode)
+
 (setq auto-indent-current-pairs nil)
 
 (setq undo-tree-mode-lighter "")
