@@ -324,7 +324,8 @@
 
 ;;; --------------------------------------------------
 ;;; paren matching
-;; (global-set-key (kbd "M-??") 'move-to-matching-paren)
+(global-set-key (kbd "M-(") 'move-to-matching-paren)
+(global-set-key (kbd "M-)") 'move-to-matching-paren)
 
 ;;; --------------------------------------------------
 ;;; anything
