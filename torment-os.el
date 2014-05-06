@@ -1,5 +1,4 @@
 (require 'ispell)
-(require 'multi-term)
 
 (if (equal system-type 'windows-nt)	
 	(progn
@@ -7,14 +6,14 @@
 
 (if (equal system-type 'darwin)
 	(progn
+	  (require 'textmate)
 	  (textmate-mode)
 	  (setq mac-option-modifier 'control)
 	  (setq mac-right-option-modifier 'control)
 	  (setq mac-command-modifier 'meta)
 	  (setq mac-right-command-modifier 'meta)
 	  (setq ns-pop-up-frames nil) 
-	  (setq tidy-shell-program "/usr/bin/tidy")
-	  (setq multi-term-program "/bin/zsh")))
+	  (setq tidy-shell-program "/usr/bin/tidy")))
 
 
 (defun cygwin-shell ()

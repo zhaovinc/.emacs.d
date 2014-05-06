@@ -47,7 +47,6 @@
 (require-package 'js2-mode)
 (require-package 'lusty-explorer)
 (require-package 'magit)
-(require-package 'multi-term)
 (require-package 'multiple-cursors)
 (require-package 'maxframe)
 (require-package 'mic-paren)

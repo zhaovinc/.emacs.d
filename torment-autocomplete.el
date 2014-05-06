@@ -12,7 +12,7 @@
 
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
 
-(load-file "~/.emacs.d/cedet/common/cedet.el")
+(load-file "~/.emacs.d/src/cedet/common/cedet.el")
 (global-ede-mode 1)
 
 (semantic-load-enable-minimum-features)
