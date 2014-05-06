@@ -2,7 +2,7 @@
 
 (if (equal system-type 'windows-nt)	
 	(progn
-	  (setq tidy-shell-program "C:/Program Files/emacs/bin/tidy.exe")))
+      (setq tidy-shell-program "C:/Users/vincentzhao/AppData/Local/Programs/Git/bin/tidy.exe")))
 
 (if (equal system-type 'darwin)
 	(progn
@@ -19,7 +19,7 @@
 (defun cygwin-shell ()
   "Run cygwin bash in shell mode"
   (interactive)
-  (let ((explicit-shell-file-name "c:/program files (x86)/git/bin/bash")
+  (let ((explicit-shell-file-name "C:/Users/vincentzhao/AppData/Local/Programs/Git/bin/bash")
 		(explicit-bash-args '("-login" "-i")))
 	(call-interactively 'shell)))
 
@@ -32,7 +32,5 @@
 	(global-set-key [f12] 'toggle-full-screen-win32))
 
 
-(if (equal system-type 'windows-nt) 
-	(defun ack-and-a-half-shell-quote (string)
-	  "Workaround for the issue that ack does not work with pattern with single quote in win32"
-	  (message string)))
+(if (not (equal system-type 'gnu/linux))
+	(scroll-bar-mode -1))

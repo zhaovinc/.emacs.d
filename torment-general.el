@@ -28,12 +28,10 @@
 (require 'auto-indent-mode)
 (require 'smart-mode-line)
 
-(set-language-environment "utf-8")
-(setq locale-coding-system 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
+(set-default buffer-file-coding-system 'utf-8-unix)
+(set-default-coding-systems 'utf-8-unix)
+(prefer-coding-system 'utf-8-unix)
+(set-default default-buffer-file-coding-system 'utf-8-unix)
 
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
@@ -52,6 +50,15 @@
 											  (abbreviate-file-name (buffer-file-name))
 											"%b"))))
 
+;; Open all files in read-only mode
+(add-hook 'find-file-hook
+          '(lambda ()
+             (when (and (buffer-file-name)
+                        (file-exists-p (buffer-file-name))
+                        (file-writable-p (buffer-file-name)))
+               (message "Toggle to read-only mode")
+               (toggle-read-only 1))))
+
 (delete-selection-mode 1)
 (cua-mode t)
 (electric-pair-mode 0)
@@ -60,13 +67,10 @@
 (global-linum-mode t)
 (tool-bar-mode 0)
 
-(sml-modeline-mode 1)
+;;(sml-modeline-mode 1)
 (setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
-(scroll-bar-mode -1)
-
-(if (equal system-type 'windows-nt) 
-	(menu-bar-mode 0))
+(menu-bar-mode 0)
 
 (setq split-height-threshold nil)
 (setq split-width-threshold 120)
@@ -83,7 +87,8 @@
 
 (wrap-region-mode t)
 
-(auto-indent-global-mode)
+;;(auto-indent-global-mode)
+
 (setq auto-indent-current-pairs nil)
 
 (setq undo-tree-mode-lighter "")
@@ -160,8 +165,10 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-*") 'mc/mark-all-like-this)
 
-;; Nifty textmate mode binding 
+;; For windows and osx 
 (global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)
+;; For linux
+(global-set-key (kbd "<M-RET>") 'auto-indent-eol-newline)
 
 ;; Textmate Mode key (obsolete)
 ;; (global-set-key (kbd "C-M-t") 'textmate-clear-cache)
@@ -288,6 +295,10 @@
 
 
 ;;; --------------------------------------------------
+;;; reserve the key for tmux
+(global-unset-key (kbd "C-v"))
+
+;;; --------------------------------------------------
 ;;; symbol highlight
 
 (global-set-key (kbd "M-p") 'highlight-symbol-prev)
@@ -313,7 +324,8 @@
 
 ;;; --------------------------------------------------
 ;;; paren matching
-;; (global-set-key (kbd "M-??") 'move-to-matching-paren)
+(global-set-key (kbd "M-(") 'move-to-matching-paren)
+(global-set-key (kbd "M-)") 'move-to-matching-paren)
 
 ;;; --------------------------------------------------
 ;;; anything
