@@ -12,6 +12,7 @@
 (require 'window-number)
 (require 'color-theme-sanityinc-tomorrow)
 (require 'color-theme-sanityinc-solarized)
+(require 'monokai-theme)
 (require 'expand-region)
 (require 'wrap-region)
 (require 'multiple-cursors)
@@ -28,11 +29,6 @@
 (require 'auto-indent-mode)
 (require 'smart-mode-line)
 
-(set-default buffer-file-coding-system 'utf-8-unix)
-(set-default-coding-systems 'utf-8-unix)
-(prefer-coding-system 'utf-8-unix)
-(set-default default-buffer-file-coding-system 'utf-8-unix)
-
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
 (setq sml/shorten-directory nil)
@@ -41,6 +37,8 @@
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
 (defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
 (defalias 'day-theme 'color-theme-sanityinc-tomorrow-day)
+
+(load-theme 'monokai t)
 
 (add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)

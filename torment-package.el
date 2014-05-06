@@ -52,6 +52,7 @@
 (require-package 'magit)
 (require-package 'multiple-cursors)
 (require-package 'maxframe)
+(require-package 'monokai-theme)
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)
 (require-package 'omnisharp)
