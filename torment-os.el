@@ -2,6 +2,7 @@
 
 (if (equal system-type 'windows-nt)	
 	(progn
+	  (menu-bar-mode 0)
       (setq tidy-shell-program "C:/Users/vincentzhao/AppData/Local/Programs/Git/bin/tidy.exe")))
 
 (if (equal system-type 'darwin)
