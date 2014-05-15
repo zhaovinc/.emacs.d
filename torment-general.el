@@ -117,6 +117,15 @@
 
 (ad-activate 'shell)
 
+(defun toggle-mode-line () "toggles the modeline on and off"
+	   (interactive)
+	   (setq mode-line-format
+			 (if (equal mode-line-format nil)
+				 (default-value 'mode-line-format)) )
+	   (redraw-display))
+
+(global-set-key (kbd "<f11>") 'toggle-mode-line)
+
 
 ;; Highlight changes
 (global-highlight-changes-mode t)
