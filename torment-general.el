@@ -59,7 +59,7 @@
 (electric-pair-mode 0)
 (autopair-global-mode)
 (ido-mode t)
-(global-linum-mode t)
+;;(global-linum-mode t)
 (tool-bar-mode 0)
 
 ;;(sml-modeline-mode 1)
@@ -357,4 +357,6 @@
   )
 )
 
-
+(add-hook 'after-change-major-mode-hook
+		  (lambda ()
+			(toggle-mode-line)))
