@@ -23,14 +23,5 @@
 		(explicit-bash-args '("-login" "-i")))
 	(call-interactively 'shell)))
 
-(defun toggle-full-screen-win32 ()
-  "Toggles full screen mode on win32"
-  (interactive)
-  (shell-command "emacs_fullscreen.exe"))
-
-(if (equal system-type 'windows-nt) 
-	(global-set-key [f12] 'toggle-full-screen-win32))
-
-
 (if (not (equal system-type 'gnu/linux))
 	(scroll-bar-mode -1))

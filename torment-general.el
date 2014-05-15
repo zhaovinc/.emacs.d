@@ -26,7 +26,6 @@
 (require 'cycbuf)
 (require 'ace-jump-mode)
 (require 'session)
-(require 'auto-indent-mode)
 (require 'smart-mode-line)
 
 (add-hook 'after-init-hook 'sml/setup)
@@ -37,8 +36,6 @@
 (defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
 (defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
 (defalias 'day-theme 'color-theme-sanityinc-tomorrow-day)
-
-(load-theme 'monokai t)
 
 (add-hook 'after-init-hook 'session-initialize)
 (add-hook 'window-setup-hook 'maximize-frame t)
@@ -125,6 +122,8 @@
 (global-highlight-changes-mode t)
 (setq highlight-changes-visibility-initial-state nil)
 
+;; key bindings
+(global-set-key (kbd "<f12>") 'toggle-frame-fullscreen)
 (global-set-key (kbd "<f6>") 'highlight-changes-visible-mode)
 
 
