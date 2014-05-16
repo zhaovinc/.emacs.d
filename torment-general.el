@@ -45,10 +45,11 @@
 											  (abbreviate-file-name (buffer-file-name))
 											"%b"))))
 
-;; Open all files in read-only mode
+;; Open all files in read-only mode (except when installing/upgrading packages)
 (add-hook 'find-file-hook
           '(lambda ()
              (when (and (buffer-file-name)
+						(not (string-suffix-p "autoloads.el" buffer-file-name))
                         (file-exists-p (buffer-file-name))
                         (file-writable-p (buffer-file-name)))
                (message "Toggle to read-only mode")

@@ -4,6 +4,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+(setq js2-highlight-level 3)
+
 (add-hook 'js2-mode-hook
 		  (lambda ()
 			(moz-minor-mode 1)
