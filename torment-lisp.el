@@ -22,6 +22,10 @@
 
 (global-set-key (kbd "C-c s") 'slime-selector)
 
+(put 'paredit-forward-delete 'delete-selection 'supersede)
+(put 'paredit-backward-delete 'delete-selection 'supersede)
+(put 'paredit-newline 'delete-selection t)
+
 (eval-after-load 'paredit
   '(progn
 	 (define-key paredit-mode-map (kbd "C-j") 'paredit-join-sexps)
