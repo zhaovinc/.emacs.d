@@ -26,6 +26,7 @@
 (require-package 'auto-complete-clang)
 (require-package 'autopair)
 (require-package 'bm)
+(require-package 'browse-kill-ring)
 (require-package 'csharp-mode)
 (require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'color-theme-sanityinc-solarized)
