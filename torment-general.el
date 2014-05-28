@@ -134,7 +134,6 @@
 (global-set-key (kbd "<f12>") 'toggle-frame-fullscreen)
 (global-set-key (kbd "<f6>") 'highlight-changes-visible-mode)
 
-
 ;; Buffer switch
 (global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer-no-timeout)
 (global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer-no-timeout)
@@ -282,7 +281,7 @@
 
 ;; Ctrl+Break is a common IDE shortcut to stop compilation/find/grep
 (global-set-key (kbd "C-<pause>") 'kill-compilation)
-(global-set-key (kbd "M-<backspace>") 'delete-indentation)
+(global-set-key (kbd "M-<backspace>") 'delete-trailing-whitespace)
 
 (global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
 (global-set-key (kbd "C-x b")   'lusty-buffer-explorer)
