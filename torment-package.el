@@ -76,6 +76,7 @@
 (require-package 'skewer-mode)
 (require-package 'slime)
 (require-package 'sml-modeline)
+(require-package 'fill-column-indicator)
 ;;(require-package 'sunrise-commander)
 (require-package 'textile-mode)
 (require-package 'tidy)
