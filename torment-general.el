@@ -358,6 +358,6 @@
   )
 )
 
-(add-hook 'after-change-major-mode-hook
-		  (lambda ()
-			(toggle-mode-line)))
+;;; (add-hook 'after-change-major-mode-hook
+;;; 		  (lambda ()
+;;;			(toggle-mode-line)))

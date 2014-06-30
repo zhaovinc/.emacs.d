@@ -27,6 +27,9 @@
 
 (setq-default c-basic-offset 4)
 
+(let ((ede-projects-file "~/.emacs.d/ede-projects.el"))
+  (if (file-exists-p ede-projects-file)
+	  (load-file ede-projects-file)))
 
 (add-hook 'c-mode-common-hook
   (lambda() 
