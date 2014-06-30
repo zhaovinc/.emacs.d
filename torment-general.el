@@ -94,6 +94,9 @@
 	  scroll-conservatively 100000
 	  scroll-preserve-screen-position 1)
 
+(setq fci-rule-use-dashes 't)
+(setq fci-dash-pattern 0.6)
+
 (setq backup-directory-alist
 	  `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
