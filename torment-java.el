@@ -3,13 +3,13 @@
 (require 'ac-emacs-eclim-source)
 (require 'web-mode)
 
-(global-eclim-mode)
+;; (global-eclim-mode)
 
 (setq help-at-pt-display-when-idle nil)
 ;; (setq help-at-pt-timer-delay 3)
 ;; (help-at-pt-set-timer)
 
-(ac-emacs-eclim-config)
+;;(ac-emacs-eclim-config)
 
 (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
 

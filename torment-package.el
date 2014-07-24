@@ -67,7 +67,6 @@
 (require-package 'rhtml-mode)
 (require-package 'restclient)
 (require-package 'rsense)
-(require-package 'ruby-electric)
 (require-package 'ruby-tools)
 (require-package 'session)
 (require-package 'slim-mode)

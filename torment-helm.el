@@ -25,6 +25,8 @@
 (setq helm-c-gtags-ignore-case t)
 (setq helm-c-gtags-read-only t)
 
+(setq projectile-mode-line-lighter "Pro")
+
 (projectile-global-on)
 
 (global-set-key (kbd "M-I") 'helm-imenu)

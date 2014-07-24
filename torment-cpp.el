@@ -34,7 +34,7 @@
 (add-hook 'c-mode-common-hook
   (lambda() 
     (local-set-key (kbd "C-c o") 'ff-find-other-file)
-	(local-set-key (kbd "M-e") 'expand-region)
+	(local-set-key (kbd "M-e") 'er/expand-region)
     (local-set-key (kbd "M-.") 'semantic-ia-fast-jump)
     (local-set-key (kbd "M-,") 'semantic-mrub-switch-tags)))
 
