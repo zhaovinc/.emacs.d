@@ -38,6 +38,7 @@
 (require-package 'emacs-eclim)
 (require-package 'etags-table)
 (require-package 'expand-region)
+(require-package 'ensime)
 (require-package 'graphviz-dot-mode)
 (require-package 'helm)
 (require-package 'helm-gtags)
