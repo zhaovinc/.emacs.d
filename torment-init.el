@@ -8,6 +8,7 @@
 (load "torment-git")
 (load "torment-html")
 (load "torment-java")
+(load "torment-scala")
 (load "torment-xml")
 (load "torment-javascript")
 (load "torment-css")

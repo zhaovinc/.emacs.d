@@ -1,6 +1,5 @@
 (require 'helm-config)
 (require 'helm-gtags)
-(require 'helm-git)
 (require 'projectile)
 (require 'helm-projectile)
 
@@ -27,7 +26,7 @@
 
 (setq projectile-mode-line-lighter "Pro")
 
-(projectile-global-on)
+(projectile-global-mode)
 
 (global-set-key (kbd "M-I") 'helm-imenu)
 
@@ -36,12 +35,10 @@
 ;; 		  (lambda ()
 ;; 			(toggle-truncate-lines t)))
 
-;; (global-set-key (kbd "M-O") 'helm-git-find-files)
 (global-set-key (kbd "M-O") 'helm-projectile)
 (global-set-key (kbd "M-,") 'pop-tag-mark)
 
 (add-hook 'helm-gtags-mode-hook
 		  (lambda ()
 			(local-set-key (kbd "M-.") 'helm-gtags-find-tag)
-			(local-set-key (kbd "M-,") 'helm-gtags-pop-stack)
-			(local-set-key (kbd "M-O") 'helm-git-find-files)))
+			(local-set-key (kbd "M-,") 'helm-gtags-pop-stack)))
