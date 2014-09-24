@@ -7,4 +7,5 @@
 
 (add-hook 'ruby-mode-hook
 		  (lambda ()
+			(superword-mode t)
 			(define-key ruby-mode-map (kbd "RET") 'newline-and-indent)))

@@ -1,6 +1,7 @@
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
+			(superword-mode t)
 			(add-to-list 'ac-sources 'ac-source-clang)
 			(add-to-list 'ac-sources 'ac-source-yasnippet)))
 

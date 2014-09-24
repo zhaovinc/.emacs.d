@@ -8,7 +8,8 @@
 
 (add-hook 'js2-mode-hook
 		  (lambda ()
-			(moz-minor-mode 1)
+			(superword-mode t)
+			(moz-minor-mode t)
 			(jquery-doc-setup)
 			(autopair-mode 0)
 			(electric-pair-mode 1)
