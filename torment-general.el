@@ -19,10 +19,7 @@
 (require 'smex)
 (require 'idle-highlight-mode)
 (require 'undo-tree)
-(require 'sml-modeline)
-(require 'restclient)
 (require 'graphviz-dot-mode)
-(require 'maxframe)
 (require 'cycbuf)
 (require 'ace-jump-mode)
 (require 'session)
@@ -38,7 +35,6 @@
 (defalias 'day-theme 'color-theme-sanityinc-tomorrow-day)
 
 (add-hook 'after-init-hook 'session-initialize)
-(add-hook 'window-setup-hook 'maximize-frame t)
 
 (setq frame-title-format
 	  '((:eval (system-name)) ": " (:eval (if (buffer-file-name)
@@ -63,8 +59,7 @@
 ;;(global-linum-mode t)
 (tool-bar-mode 0)
 
-;;(sml-modeline-mode 1)
-(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
+;;(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
 (setq split-height-threshold nil)
 (setq split-width-threshold 120)
@@ -74,7 +69,6 @@
 (smex-initialize)
 
 (paren-activate)
-(global-rainbow-delimiters-mode)
 
 (setq escreen-prefix-char "\C-t")
 (escreen-install)

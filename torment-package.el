@@ -73,7 +73,6 @@
 (require-package 'smex)
 (require-package 'skewer-mode)
 (require-package 'slime)
-(require-package 'sml-modeline)
 (require-package 'fill-column-indicator)
 (require-package 'textile-mode)
 (require-package 'tidy)

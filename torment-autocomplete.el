@@ -50,6 +50,7 @@
 (add-to-list 'ac-modes 'slime-repl-mode)
 (add-to-list 'ac-modes 'inferior-moz-mode)
 (add-to-list 'ac-modes 'powershell-mode)
+(add-to-list 'ac-modes 'scala-mode)
 
 (global-set-key (kbd "M-/") 'auto-complete)
 (define-key ac-completing-map [tab] 'ac-complete)
