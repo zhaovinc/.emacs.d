@@ -13,6 +13,7 @@
 			(jquery-doc-setup)
 			(autopair-mode 0)
 			(electric-pair-mode 1)
+			(js2-imenu-extras-mode)
             (define-key js2-mode-map (kbd "M-j") 'backward-char)))
 
 (add-hook 'inferior-moz-mode-hook

@@ -141,6 +141,8 @@
 (global-set-key (kbd "<f2>")   'bm-next)
 (global-set-key (kbd "<S-f2>") 'bm-previous)
 
+;; Multiple frames
+(global-set-key (kbd "C-x o") 'other-frame)
 
 ;; Aliases
 (defalias 'ggrep 'vc-git-grep)

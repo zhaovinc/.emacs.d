@@ -15,6 +15,6 @@
 			(flyspell-mode 1)
 			(define-key org-mode-map (kbd "M-e") 'er/expand-region)))
 
-(add-hook 'org-mode-hook
-		  (lambda ()
-			(add-to-list 'ac-sources ac-source-ispell)))
+;; (add-hook 'org-mode-hook
+;; 		  (lambda ()
+;; 			(add-to-list 'ac-sources ac-source-ispell)))
