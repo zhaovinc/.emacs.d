@@ -1,16 +1,6 @@
-(require 'auto-complete-config)
-(require 'auto-complete-clang)
-(require 'auto-complete-nxml)
 (require 'yasnippet)
 (require 'etags-table)
-
-(set-face-background 'ac-candidate-face "#141414")
-(set-face-foreground 'ac-candidate-face "#f6f3e8")
-(set-face-background 'ac-selection-face "#64a8d8")
-
-(set-face-background 'popup-tip-face "#64a8d8")
-
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
+(require 'company)
 
 (load-file "~/.emacs.d/src/cedet/common/cedet.el")
 (global-ede-mode 1)
@@ -27,36 +17,6 @@
                     "snippets")))
 
 (yas-global-mode 1)
-
-(ac-config-default)
-
-(setq ac-auto-start nil)
-(setq ac-auto-show-menu nil)
-(setq ac-dwim nil)
-;;(setq ac-delay 0.2)
-
-(add-to-list 'ac-modes 'nxml-mode)
-(add-to-list 'ac-modes 'prog-mode)
-(add-to-list 'ac-modes 'c-mode)
-(add-to-list 'ac-modes 'cpp-mode)
-(add-to-list 'ac-modes 'org-mode)
-(add-to-list 'ac-modes 'js2-mode)
-(add-to-list 'ac-modes 'css-mode)
-(add-to-list 'ac-modes 'web-mode)
-(add-to-list 'ac-modes 'ruby-mode)
-(add-to-list 'ac-modes 'shell-mode)
-(add-to-list 'ac-modes 'emacs-lisp-mode)
-(add-to-list 'ac-modes 'lisp-mode)
-(add-to-list 'ac-modes 'slime-repl-mode)
-(add-to-list 'ac-modes 'inferior-moz-mode)
-(add-to-list 'ac-modes 'powershell-mode)
-(add-to-list 'ac-modes 'scala-mode)
-
-(global-set-key (kbd "M-/") 'auto-complete)
-(define-key ac-completing-map [tab] 'ac-complete)
-(define-key ac-completing-map "\M-i" 'ac-previous)
-(define-key ac-completing-map "\M-k" 'ac-next)
-(define-key ac-completing-map "\M-s" 'ac-isearch)
     
 ;;(setq yas/use-menu nil)
 ;;(setq yas/trigger-key nil)
@@ -65,11 +25,14 @@
                             yas/ido-prompt
                             yas/completing-prompt))
 
-(defvar ac-source-etags
-  '((candidates . (lambda ()
-         (all-completions ac-target (tags-completion-table))))
-    (candidate-face . ac-candidate-face)
-    (selection-face . ac-selection-face)
-    (requires . 3))
-  "etags source")
+(global-company-mode)
+
+(global-set-key (kbd "M-/") 'company-complete)
+(define-key company-active-map "\M-i" 'company-select-previous)
+(define-key company-active-map "\M-k" 'company-select-next)
+(define-key company-active-map "\M-s" 'company-search-candidates)
+
+(add-to-list 'company-backends 'company-omnisharp)
+(add-to-list 'company-backends 'company-yasnippet)
+
 

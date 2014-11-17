@@ -1,6 +1,5 @@
 (require 'org-install)
 (require 'deft)
-(require 'ac-source-ispell)
 
 
 (setq deft-extension "org"
@@ -15,6 +14,3 @@
 			(flyspell-mode 1)
 			(define-key org-mode-map (kbd "M-e") 'er/expand-region)))
 
-;; (add-hook 'org-mode-hook
-;; 		  (lambda ()
-;; 			(add-to-list 'ac-sources ac-source-ispell)))

@@ -1,4 +1,3 @@
-;;(require 'ac-slime)
 (require 'paredit)
 (require 'elisp-slime-nav)
 
@@ -54,6 +53,4 @@
 		  (lambda ()
 			(rainbow-mode)
 			(elisp-slime-nav-mode t)
-			(local-set-key [return] 'newline-and-indent)
-			(add-to-list 'ac-sources 'ac-source-emacs-lisp-features)))
-
+			(local-set-key [return] 'newline-and-indent)))

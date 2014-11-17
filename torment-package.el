@@ -17,16 +17,14 @@
 
 (package-initialize)
 
-(require-package 'ac-slime)
 (require-package 'ag)
 (require-package 'apache-mode)
 (require-package 'ace-jump-mode)
 (require-package 'auto-indent-mode)
-(require-package 'auto-complete)
-(require-package 'auto-complete-clang)
 (require-package 'autopair)
 (require-package 'bm)
 (require-package 'browse-kill-ring)
+(require-package 'company)
 (require-package 'csharp-mode)
 (require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'color-theme-sanityinc-solarized)
