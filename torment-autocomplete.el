@@ -17,7 +17,7 @@
                     "snippets")))
 
 (yas-global-mode 1)
-    
+
 ;;(setq yas/use-menu nil)
 ;;(setq yas/trigger-key nil)
 
@@ -31,8 +31,10 @@
 (define-key company-active-map "\M-i" 'company-select-previous)
 (define-key company-active-map "\M-k" 'company-select-next)
 (define-key company-active-map "\M-s" 'company-search-candidates)
+(define-key company-active-map [tab] 'company-complete-selection)
 
 (add-to-list 'company-backends 'company-omnisharp)
 (add-to-list 'company-backends 'company-yasnippet)
+(add-to-list 'company-backends 'company-elisp)
 
-
+(setq omnisharp-imenu-support t)
