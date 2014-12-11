@@ -124,8 +124,8 @@
 
 
 ;; Highlight changes
-(global-highlight-changes-mode t)
-(setq highlight-changes-visibility-initial-state nil)
+;;(global-highlight-changes-mode t)
+;;(setq highlight-changes-visibility-initial-state nil)
 
 ;; key bindings
 (global-set-key (kbd "<f12>") 'toggle-frame-fullscreen)
@@ -232,7 +232,7 @@
 (global-set-key (kbd "M-x") 'kill-region)
 (global-set-key (kbd "M-c") 'kill-ring-save)
 (global-set-key (kbd "M-v") 'yank)
-(global-set-key (kbd "M-V") 'yank-pop)
+(global-set-key (kbd "M-V") 'helm-show-kill-ring)
 (global-set-key (kbd "M-C") 'copy-all)
 (global-set-key (kbd "M-X") 'cut-all)
 
