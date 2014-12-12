@@ -28,7 +28,7 @@
 
 (projectile-global-mode)
 
-(global-set-key (kbd "M-I") 'helm-imenu)
+(global-set-key (kbd "M-I") 'helm-semantic-or-imenu)
 
 
 ;; (add-hook 'helm-after-update-hook
