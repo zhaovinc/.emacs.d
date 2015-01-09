@@ -113,6 +113,10 @@
  '(ace-isearch-input-length 7)
  '(ace-isearch-input-idle-delay 0.4))
 
+(define-key helm-swoop-map (kbd "M-n") 'helm-next-line)
+(define-key helm-swoop-map (kbd "M-p") 'helm-previous-line)
+
+
 ;; Always start a new shell 
 (defadvice shell (around always-new-shell)
   "Always start a new shell."
