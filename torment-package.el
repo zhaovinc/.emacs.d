@@ -20,6 +20,7 @@
 (require-package 'ag)
 (require-package 'apache-mode)
 (require-package 'ace-jump-mode)
+(require-package 'ace-isearch)
 (require-package 'auto-indent-mode)
 (require-package 'autopair)
 (require-package 'bm)

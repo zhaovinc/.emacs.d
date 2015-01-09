@@ -24,6 +24,7 @@
 (require 'ace-jump-mode)
 (require 'session)
 (require 'smart-mode-line)
+(require 'ace-isearch)
 
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
@@ -105,6 +106,12 @@
 (setq cua--rectangle-modifier-key 'control)
 
 (put 'set-goal-column 'disabled nil)
+
+(global-ace-isearch-mode +1)
+
+(custom-set-variables
+ '(ace-isearch-input-length 7)
+ '(ace-isearch-input-idle-delay 0.4))
 
 ;; Always start a new shell 
 (defadvice shell (around always-new-shell)
