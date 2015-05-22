@@ -1,6 +1,7 @@
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
+		    (add-to-list 'ac-sources 'ac-source-yasnippet)
 			(superword-mode t)))
 
 (setq c-default-style "linux"

@@ -1,6 +1,7 @@
 (require 'yasnippet)
 (require 'etags-table)
-(require 'company)
+(require 'auto-complete-config)
+(require 'auto-complete-nxml)
 
 (load-file "~/.emacs.d/src/cedet/common/cedet.el")
 (global-ede-mode 1)
@@ -25,16 +26,35 @@
                             yas/ido-prompt
                             yas/completing-prompt))
 
-(global-company-mode)
 
-(global-set-key (kbd "M-/") 'company-complete)
-(define-key company-active-map "\M-i" 'company-select-previous)
-(define-key company-active-map "\M-k" 'company-select-next)
-(define-key company-active-map "\M-s" 'company-search-candidates)
-(define-key company-active-map [tab] 'company-complete-selection)
+(ac-config-default)
 
-(add-to-list 'company-backends 'company-omnisharp)
-(add-to-list 'company-backends 'company-yasnippet)
-(add-to-list 'company-backends 'company-elisp)
+(setq ac-auto-start nil)
+(setq ac-auto-show-menu nil)
+(setq ac-dwim nil)
+;;(setq ac-delay 0.2)
+
+(add-to-list 'ac-modes 'nxml-mode)
+(add-to-list 'ac-modes 'prog-mode)
+(add-to-list 'ac-modes 'c-mode)
+(add-to-list 'ac-modes 'cpp-mode)
+(add-to-list 'ac-modes 'org-mode)
+(add-to-list 'ac-modes 'js2-mode)
+(add-to-list 'ac-modes 'css-mode)
+(add-to-list 'ac-modes 'web-mode)
+(add-to-list 'ac-modes 'ruby-mode)
+(add-to-list 'ac-modes 'shell-mode)
+(add-to-list 'ac-modes 'emacs-lisp-mode)
+(add-to-list 'ac-modes 'lisp-mode)
+(add-to-list 'ac-modes 'slime-repl-mode)
+(add-to-list 'ac-modes 'inferior-moz-mode)
+(add-to-list 'ac-modes 'powershell-mode)
+(add-to-list 'ac-modes 'scala-mode)
+
+(global-set-key (kbd "M-/") 'auto-complete)
+(define-key ac-completing-map [tab] 'ac-complete)
+(define-key ac-completing-map "\M-i" 'ac-previous)
+(define-key ac-completing-map "\M-k" 'ac-next)
+(define-key ac-completing-map "\M-s" 'ac-isearch)
 
 (setq omnisharp-imenu-support t)
