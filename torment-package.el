@@ -72,6 +72,8 @@
 (require-package 'smex)
 (require-package 'skewer-mode)
 (require-package 'slime)
+(require-package 'tern)
+(require-package 'tern-auto-complete)
 (require-package 'fill-column-indicator)
 (require-package 'textile-mode)
 (require-package 'tidy)

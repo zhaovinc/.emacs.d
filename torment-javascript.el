@@ -1,6 +1,7 @@
 (require 'js2-mode)
 (require 'jquery-doc)
 (require 'moz)
+(require 'tern)
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
@@ -10,6 +11,7 @@
 		  (lambda ()
 			(superword-mode t)
 			(moz-minor-mode t)
+			(tern-mode t)
 			(jquery-doc-setup)
 			(autopair-mode 0)
 			(electric-pair-mode 1)
@@ -20,6 +22,8 @@
 		  (lambda ()
 			(autopair-mode 0)
 			(electric-pair-mode 1)))
+			
+(tern-ac-setup)
 
 
 
