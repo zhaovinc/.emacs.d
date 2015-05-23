@@ -63,7 +63,7 @@
 ;;(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
 (setq split-height-threshold nil)
-(setq split-width-threshold 120)
+(setq split-width-threshold nil)
 
 (window-number-meta-mode)
 
