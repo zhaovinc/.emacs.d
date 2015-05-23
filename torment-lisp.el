@@ -53,4 +53,5 @@
 		  (lambda ()
 			(rainbow-mode)
 			(elisp-slime-nav-mode t)
+			(add-to-list 'ac-sources 'ac-source-emacs-lisp-features)
 			(local-set-key [return] 'newline-and-indent)))
