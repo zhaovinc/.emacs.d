@@ -55,6 +55,7 @@
 (require-package 'monokai-theme)
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)
+(require-package 'markdown-mode)
 (require-package 'omnisharp)
 (require-package 'paredit)
 (require-package 'php-mode)
