@@ -57,7 +57,8 @@
 (electric-pair-mode 0)
 (autopair-global-mode)
 (ido-mode t)
-(setq ido-enable-prefix t)
+;;(setq ido-enable-prefix t)
+(setq ido-enable-flex-matching t)
 
 ;;(global-linum-mode t)
 (tool-bar-mode 0)

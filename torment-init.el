@@ -23,3 +23,5 @@
 (load "torment-gnus")
 (load "torment-tramp")
 ;;(load "torment-dict")
+
+(setq magit-last-seen-setup-instructions "1.4.0")
