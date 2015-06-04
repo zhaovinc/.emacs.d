@@ -17,7 +17,7 @@
 (load "torment-objc")
 (load "torment-ruby")
 (load "torment-lisp")
-(load "torment-powershell")
+;;(load "torment-powershell")
 (load "torment-notes")
 (load "torment-file")
 (load "torment-gnus")
