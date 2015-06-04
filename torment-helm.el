@@ -35,7 +35,8 @@
 ;; 		  (lambda ()
 ;; 			(toggle-truncate-lines t)))
 
-(global-set-key (kbd "M-O") 'helm-projectile)
+;;(global-set-key (kbd "M-O") 'helm-projectile)
+(global-set-key (kbd "M-O") 'projectile-find-file-dwim)
 (global-set-key (kbd "M-,") 'pop-tag-mark)
 
 (add-hook 'helm-gtags-mode-hook

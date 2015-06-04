@@ -68,6 +68,7 @@
 (require-package 'ruby-tools)
 (require-package 'scala-mode2)
 (require-package 'session)
+(require-package 'sass-mode)
 (require-package 'slim-mode)
 (require-package 'smart-mode-line)
 (require-package 'smex)
