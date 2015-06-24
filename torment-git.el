@@ -12,3 +12,4 @@
 			(local-set-key (kbd "M-h") 'scroll-up)
 			(local-set-key (kbd "M-c") 'magit-copy-item-as-kill))) 
 
+(setq projectile-git-command "git ls-files -zc --exclude-standard")
