@@ -30,10 +30,15 @@
 (setq sml/shorten-modes t)
 (setq sml/shorten-directory nil)
 (setq sml/mode-width 3)
+(setq sml/theme 'respectful)
 
-(defalias 'dark-theme 'color-theme-sanityinc-tomorrow-bright)
-(defalias 'night-theme 'color-theme-sanityinc-tomorrow-night)
-(defalias 'day-theme 'color-theme-sanityinc-tomorrow-day)
+(set-fringe-mode '(0 . 0))
+
+(add-to-list 'custom-theme-load-path
+             (file-name-as-directory "~/.emacs.d/src/misc"))
+(load-theme 'high-contrast t t)
+(load-theme 'sanityinc-tomorrow-blue)
+(enable-theme 'sanityinc-tomorrow-blue)
 
 (add-hook 'after-init-hook 'session-initialize)
 
@@ -78,6 +83,13 @@
 (escreen-install)
 
 (wrap-region-mode t)
+
+(custom-set-faces
+ '(ido-subdir ((t (:foreground "#66ff00"))))
+ '(ido-first-match ((t (:foreground "#ccff66"))))
+ '(ido-only-match ((t (:foreground "#ffcc33" :background "black"))))
+ '(ido-indicator ((t (:foreground "#ffffff"))))
+ '(ido-incomplete-regexp ((t (:foreground "#ffffff")))))
 
 ;;(auto-indent-global-mode)
 

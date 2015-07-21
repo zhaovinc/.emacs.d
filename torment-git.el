@@ -1,5 +1,4 @@
 (require 'magit)
-(require 'mo-git-blame)
 
 (setq magit-save-some-buffers nil
       magit-process-popup-time 60
@@ -13,3 +12,4 @@
 			(local-set-key (kbd "M-c") 'magit-copy-item-as-kill))) 
 
 (setq projectile-git-command "git ls-files -zc --exclude-standard")
+

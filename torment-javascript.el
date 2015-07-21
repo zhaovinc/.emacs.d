@@ -6,6 +6,7 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (setq js2-highlight-level 3)
+(setq js-indent-level 2)
 
 (add-hook 'js2-mode-hook
 		  (lambda ()
@@ -15,14 +16,16 @@
 			(jquery-doc-setup)
 			(autopair-mode 0)
 			(electric-pair-mode 1)
-			(js2-imenu-extras-mode)
-            (define-key js2-mode-map (kbd "M-j") 'backward-char)))
+			(js2-imenu-extras-mode)))
+
+
+(define-key js2-mode-map (kbd "M-j") 'backward-char)
 
 (add-hook 'inferior-moz-mode-hook
 		  (lambda ()
 			(autopair-mode 0)
 			(electric-pair-mode 1)))
-			
+
 (tern-ac-setup)
 
 
@@ -32,7 +35,7 @@
       js2-indent-on-enter-key t
       js2-skip-preprocessor-directives t
       js2-auto-indent-p t
-      js2-bounce-indent-p t)
+      js2-bounce-indent-p nil)
 
 (setq javascript-common-imenu-regex-list
       '(("Controller" "[. \t]controller([ \t]*['\"]\\([^'\"]+\\)" 1)
