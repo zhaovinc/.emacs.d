@@ -19,7 +19,6 @@
 (require 'smex)
 (require 'idle-highlight-mode)
 (require 'undo-tree)
-(require 'graphviz-dot-mode)
 (require 'cycbuf)
 (require 'ace-jump-mode)
 (require 'session)
@@ -36,9 +35,6 @@
 
 (add-to-list 'custom-theme-load-path
              (file-name-as-directory "~/.emacs.d/src/misc"))
-(load-theme 'high-contrast t t)
-(load-theme 'sanityinc-tomorrow-blue)
-(enable-theme 'sanityinc-tomorrow-blue)
 
 (add-hook 'after-init-hook 'session-initialize)
 

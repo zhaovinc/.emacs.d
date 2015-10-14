@@ -19,6 +19,7 @@
 
 (require-package 'ag)
 (require-package 'apache-mode)
+(require-package 'ace-window)
 (require-package 'ace-jump-mode)
 (require-package 'ace-isearch)
 (require-package 'auto-indent-mode)
@@ -38,8 +39,8 @@
 (require-package 'etags-table)
 (require-package 'expand-region)
 (require-package 'ensime)
-(require-package 'graphviz-dot-mode)
 (require-package 'helm)
+(require-package 'groovy-mode)
 (require-package 'helm-gtags)
 (require-package 'helm-projectile)
 (require-package 'helm-swoop)
