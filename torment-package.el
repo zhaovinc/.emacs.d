@@ -44,6 +44,7 @@
 (require-package 'helm-gtags)
 (require-package 'helm-projectile)
 (require-package 'helm-swoop)
+(require-package 'helm-git-grep)
 (require-package 'highlight-parentheses)
 (require-package 'highlight-symbol)
 (require-package 'hungry-delete)

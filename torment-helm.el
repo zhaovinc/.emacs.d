@@ -24,7 +24,7 @@
 (setq helm-c-gtags-ignore-case t)
 (setq helm-c-gtags-read-only t)
 
-(setq projectile-mode-line-lighter "Pro")
+(setq projectile-mode-line nil)
 
 (projectile-global-mode)
 
@@ -37,6 +37,7 @@
 
 ;;(global-set-key (kbd "M-O") 'helm-projectile)
 (global-set-key (kbd "M-O") 'projectile-find-file-dwim)
+(global-set-key (kbd "M-R") 'helm-git-grep-at-point)
 (global-set-key (kbd "M-,") 'pop-tag-mark)
 
 (add-hook 'helm-gtags-mode-hook

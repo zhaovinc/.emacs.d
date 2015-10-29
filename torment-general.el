@@ -304,7 +304,7 @@
 (global-set-key (kbd "C-<pause>") 'kill-compilation)
 (global-set-key (kbd "M-<backspace>") 'delete-trailing-whitespace)
 
-(global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
+;;(global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
 ;;(global-set-key (kbd "C-x b")   'lusty-buffer-explorer)
 
 
