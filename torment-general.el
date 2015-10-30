@@ -251,16 +251,13 @@
 ;; open file
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 
-;;(global-set-key (kbd "C-c C-r") 'ivy-resume)
-;;(global-set-key [f6] 'ivy-resume)
-
 (define-key ivy-minibuffer-map (kbd "M-i") 'ivy-previous-line)
 (define-key ivy-minibuffer-map (kbd "M-k") 'ivy-next-line)
 (define-key ivy-minibuffer-map (kbd "M-r") 'ivy-previous-line)
 (define-key ivy-minibuffer-map (kbd "M-s") 'ivy-next-line)
+(define-key ivy-minibuffer-map (kbd "M-p") 'ivy-previous-line)
+(define-key ivy-minibuffer-map (kbd "M-n") 'ivy-next-line)
 
- 
-;;; MAJOR EDITING COMMANDS
 
 ;; Delete previous/next char.
 (global-set-key (kbd "C-d") 'delete-char)
