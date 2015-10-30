@@ -9,9 +9,6 @@
 (require 'iedit)
 (require 'hungry-delete)
 (require 'window-number)
-(require 'color-theme-sanityinc-tomorrow)
-(require 'color-theme-sanityinc-solarized)
-(require 'monokai-theme)
 (require 'expand-region)
 (require 'wrap-region)
 (require 'multiple-cursors)
@@ -23,6 +20,7 @@
 (require 'smart-mode-line)
 (require 'ace-isearch)
 (require 'swiper)
+(require 'beacon)
 
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
@@ -89,6 +87,10 @@
 ;;(auto-indent-global-mode)
 
 (setq auto-indent-current-pairs nil)
+
+(beacon-mode 1)
+(setq beacon-push-mark 35)
+(setq beacon-color "#006666")
 
 (setq undo-tree-mode-lighter "")
 (global-undo-tree-mode)

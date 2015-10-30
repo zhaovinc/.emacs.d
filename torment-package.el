@@ -26,6 +26,7 @@
 (require-package 'autopair)
 (require-package 'auto-complete)
 (require-package 'bm)
+(require-package 'beacon)
 (require-package 'browse-kill-ring)
 (require-package 'csharp-mode)
 (require-package 'color-theme-sanityinc-tomorrow)
