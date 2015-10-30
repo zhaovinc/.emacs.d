@@ -13,3 +13,6 @@
 
 (setq projectile-git-command "git ls-files -zc --exclude-standard")
 
+(setq magit-completing-read-function 'ivy-completing-read)
+
+

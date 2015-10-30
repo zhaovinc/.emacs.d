@@ -35,10 +35,12 @@
 ;; 		  (lambda ()
 ;; 			(toggle-truncate-lines t)))
 
-;;(global-set-key (kbd "M-O") 'helm-projectile)
-(global-set-key (kbd "M-O") 'projectile-find-file-dwim)
+(setq projectile-completion-system 'ivy)
+
+(global-set-key (kbd "M-O") 'projectile-find-file)
 (global-set-key (kbd "M-R") 'helm-git-grep-at-point)
 (global-set-key (kbd "M-,") 'pop-tag-mark)
+
 
 (add-hook 'helm-gtags-mode-hook
 		  (lambda ()

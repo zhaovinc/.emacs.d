@@ -6,7 +6,6 @@
 (require 'mic-paren)
 (require 'rainbow-delimiters)
 (require 'autopair)
-(require 'lusty-explorer)
 (require 'iedit)
 (require 'hungry-delete)
 (require 'window-number)
@@ -19,11 +18,11 @@
 (require 'smex)
 (require 'idle-highlight-mode)
 (require 'undo-tree)
-(require 'cycbuf)
 (require 'ace-jump-mode)
 (require 'session)
 (require 'smart-mode-line)
 (require 'ace-isearch)
+(require 'swiper)
 
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
@@ -120,6 +119,9 @@
 
 (global-ace-isearch-mode +1)
 
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+
 (custom-set-variables
  '(ace-isearch-input-length 7)
  '(ace-isearch-input-idle-delay 0.4))
@@ -128,7 +130,7 @@
 (define-key helm-swoop-map (kbd "M-p") 'helm-previous-line)
 
 
-;; Always start a new shell 
+;; Always start a new shell
 (defadvice shell (around always-new-shell)
   "Always start a new shell."
   (let ((buffer (generate-new-buffer-name "*shell*"))) ad-do-it))
@@ -154,8 +156,8 @@
 (global-set-key (kbd "<f6>") 'highlight-changes-visible-mode)
 
 ;; Buffer switch
-(global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer-no-timeout)
-(global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer-no-timeout)
+;;(global-set-key (kbd "M-{") 'cycbuf-switch-to-next-buffer-no-timeout)
+;;(global-set-key (kbd "M-}") 'cycbuf-switch-to-previous-buffer-no-timeout)
 
 
 ;; Bookmarks
@@ -190,7 +192,7 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-*") 'mc/mark-all-like-this)
 
-;; For windows and osx 
+;; For windows and osx
 (global-set-key (kbd "<M-return>") 'auto-indent-eol-newline)
 ;; For linux
 (global-set-key (kbd "<M-RET>") 'auto-indent-eol-newline)
@@ -239,9 +241,25 @@
 (define-key global-map (kbd "C-b") 'zap-back-to-char)
 
 ;; isearch
-(global-set-key (kbd "M-s") 'isearch-forward)
-(global-set-key (kbd "M-r") 'isearch-backward)
+;;(global-set-key (kbd "M-s") 'isearch-forward)
+;;(global-set-key (kbd "M-r") 'isearch-backward)
 
+;; swipe
+(global-set-key (kbd "M-s") 'swiper)
+(global-set-key (kbd "M-r") 'swiper)
+
+;; open file
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+
+;;(global-set-key (kbd "C-c C-r") 'ivy-resume)
+;;(global-set-key [f6] 'ivy-resume)
+
+(define-key ivy-minibuffer-map (kbd "M-i") 'ivy-previous-line)
+(define-key ivy-minibuffer-map (kbd "M-k") 'ivy-next-line)
+(define-key ivy-minibuffer-map (kbd "M-r") 'ivy-previous-line)
+(define-key ivy-minibuffer-map (kbd "M-s") 'ivy-next-line)
+
+ 
 ;;; MAJOR EDITING COMMANDS
 
 ;; Delete previous/next char.
@@ -262,8 +280,8 @@
 (global-set-key (kbd "M-Z") 'redo)
 (global-set-key (kbd "M-z") 'undo)
 
-; Kill line 
-;(global-set-key (kbd "??") 'kill-line) 
+; Kill line
+;(global-set-key (kbd "??") 'kill-line)
 ;(global-set-key (kbd "??") 'kill-line-backward)
 
 ;;; Textual Transformation
@@ -303,9 +321,6 @@
 ;; Ctrl+Break is a common IDE shortcut to stop compilation/find/grep
 (global-set-key (kbd "C-<pause>") 'kill-compilation)
 (global-set-key (kbd "M-<backspace>") 'delete-trailing-whitespace)
-
-;;(global-set-key (kbd "C-x C-f") 'lusty-file-explorer)
-;;(global-set-key (kbd "C-x b")   'lusty-buffer-explorer)
 
 
 ;;; --------------------------------------------------
@@ -365,16 +380,16 @@
  (define-key isearch-mode-map (kbd "M-w") 'backward-kill-word)
  (define-key isearch-mode-map (kbd "M-v") 'isearch-yank-kill)
  (define-key isearch-mode-map (kbd "M-V") 'isearch-yank-word-or-char)))
- 
- 
+
+
 ;;; --------------------------------------------------
-;;; isearch mode 
-(add-hook 'Info-mode-hook
- (lambda ()
- (define-key Info-mode-map (kbd "M-s") 'isearch-forward)
- (define-key Info-mode-map (kbd "M-r") 'isearch-backward)
-  )
-)
+;;; isearch mode
+;; (add-hook 'Info-mode-hook
+;;  (lambda ()
+;;  (define-key Info-mode-map (kbd "M-s") 'isearch-forward)
+;;  (define-key Info-mode-map (kbd "M-r") 'isearch-backward)
+;;   )
+;; )
 
 ;;; (add-hook 'after-change-major-mode-hook
 ;;; 		  (lambda ()

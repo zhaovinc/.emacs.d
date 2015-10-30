@@ -30,8 +30,8 @@
 	 (define-key paredit-mode-map (kbd "C-j") 'paredit-join-sexps)
 	 (define-key paredit-mode-map (kbd "C-s") 'paredit-split-sexp)
 	 (define-key paredit-mode-map (kbd "C-l") 'paredit-splice-sexp)
-     (define-key paredit-mode-map (kbd "M-s") 'isearch-forward)
-     (define-key paredit-mode-map (kbd "M-r") 'isearch-backward)))
+     (define-key paredit-mode-map (kbd "M-s") 'swiper)
+     (define-key paredit-mode-map (kbd "M-r") 'swiper)))
 
 
 (add-hook 'lisp-mode-hook
