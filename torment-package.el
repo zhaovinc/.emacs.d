@@ -29,6 +29,7 @@
 (require-package 'beacon)
 (require-package 'browse-kill-ring)
 (require-package 'csharp-mode)
+(require-package 'counsel)
 (require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'deft)
 (require-package 'dictionary)

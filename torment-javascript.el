@@ -65,9 +65,8 @@
     (imenu--generic-function javascript-common-imenu-regex-list)))
 
 (defun mo-js-mode-hook ()
-  (unless (is-buffer-file-temp)
     (setq imenu-create-index-function 'mo-js-imenu-make-index)
-    (flymake-mode 1)))
+    (flymake-mode 1))
 
 (add-hook 'js-mode-hook 'mo-js-mode-hook)
 
@@ -206,7 +205,7 @@ Merge RLT and EXTRA-RLT, items in RLT has *higher* priority."
 ;; }}
 
 (defun my-js2-mode-setup()
-  (unless (is-buffer-file-temp)
+  (
     ;; looks nodejs is more popular, if you prefer rhino, change to "js"
     (setq inferior-js-program-command "node --interactive")
     (require 'js-comint)
