@@ -171,7 +171,7 @@
 (global-set-key (kbd "C-x o") 'other-frame)
 
 ;; Aliases
-(defalias 'ggrep 'vc-git-grep)
+(defalias 'gg 'counsel-git-grep)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
