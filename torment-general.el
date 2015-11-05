@@ -340,9 +340,21 @@
 ;;; --------------------------------------------------
 ;;; symbol highlight
 
+(defun highlight-symbol-at-point-all-windows ()
+  "Toggle highlighting of the symbol at point in all windows."
+  (interactive)
+  (let ((symbol (highlight-symbol-get-symbol)))
+    (unless symbol (error "No symbol at point"))
+    (save-selected-window                           ; new
+      (cl-dolist (x (window-list))                  ; new
+        (select-window x)                           ; new
+        (if (highlight-symbol-symbol-highlighted-p symbol)
+            (highlight-symbol-remove-symbol symbol)
+          (highlight-symbol-add-symbol symbol))))))
+
 (global-set-key (kbd "M-p") 'highlight-symbol-prev)
 (global-set-key (kbd "M-n") 'highlight-symbol-next)
-(global-set-key (kbd "M-*") 'highlight-symbol-at-point)
+(global-set-key (kbd "M-*") 'highlight-symbol-at-point-all-windows)
 
 ;;; -------------------------------------------------
 (global-set-key (kbd "C-9") '(lambda()(interactive)(opacity-modify t)))
@@ -393,3 +405,4 @@
 ;;; (add-hook 'after-change-major-mode-hook
 ;;; 		  (lambda ()
 ;;;			(toggle-mode-line)))
+
