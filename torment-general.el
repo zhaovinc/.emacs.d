@@ -186,7 +186,7 @@
 (defalias 'er 'eval-region)
 (defalias 'ee 'eval-expression)
 
-(defalias 'ms 'magit-status)
+(defalias 'git 'magit-status)
 (defalias 'ttl 'toggle-truncate-lines)
 
 ;; Mark Multiple
