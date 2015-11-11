@@ -123,6 +123,7 @@
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
+(setq ivy-height 16)
 
 (custom-set-variables
  '(ace-isearch-input-length 7)
@@ -259,7 +260,7 @@
 (define-key ivy-minibuffer-map (kbd "M-s") 'ivy-next-line)
 (define-key ivy-minibuffer-map (kbd "M-p") 'ivy-previous-line)
 (define-key ivy-minibuffer-map (kbd "M-n") 'ivy-next-line)
-
+(define-key ivy-minibuffer-map (kbd "M-v") 'yank)
 
 ;; Delete previous/next char.
 (global-set-key (kbd "C-d") 'delete-char)
