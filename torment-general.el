@@ -60,6 +60,8 @@
 
 ;;(global-linum-mode t)
 (tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 ;;(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
