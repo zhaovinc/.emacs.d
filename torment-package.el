@@ -56,6 +56,7 @@
 (require-package 'js-doc)
 (require-package 'magit)
 (require-package 'multiple-cursors)
+(require-package 'multi-term)
 (require-package 'monokai-theme)
 (require-package 'mic-paren)
 (require-package 'mo-git-blame)
