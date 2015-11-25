@@ -63,6 +63,9 @@
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 
+;; NO TABS
+(setq-default indent-tabs-mode nil)
+
 ;;(setq sml/sml-modeline-position 'sml/anchor-before-major-mode)
 
 (setq split-height-threshold nil)

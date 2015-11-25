@@ -37,7 +37,8 @@
               js2-skip-preprocessor-directives t
               js2-strict-inconsistent-return-warning nil ; return <=> return null
               js2-enter-indents-newline nil
-              js2-bounce-indent-p t)
+              js2-bounce-indent-p t
+              js2-basic-offset 2)
 
 (setq javascript-common-imenu-regex-list
       '(("Controller" "[. \t]controller([ \t]*['\"]\\([^'\"]+\\)" 1)
