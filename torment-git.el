@@ -15,4 +15,4 @@
 
 (setq magit-completing-read-function 'ivy-completing-read)
 
-
+(setq projectile-indexing-method 'alien)
