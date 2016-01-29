@@ -12,12 +12,10 @@
 		  (lambda ()
 			(superword-mode t)
 			(moz-minor-mode t)
-			(tern-mode t)
 			(jquery-doc-setup)
 			(autopair-mode 0)
 			(electric-pair-mode 1)
 			(js2-imenu-extras-mode)))
-
 
 (define-key js2-mode-map (kbd "M-j") 'backward-char)
 
@@ -26,7 +24,6 @@
 			(autopair-mode 0)
 			(electric-pair-mode 1)))
 
-(tern-ac-setup)
 
 ;; {{ js2-mode or javascript-mode
 (setq-default js2-use-font-lock-faces t
