@@ -22,6 +22,9 @@
 (require 'swiper)
 (require 'beacon)
 
+(load-theme 'monokai t)
+(setq warning-minimum-level :emergency)
+
 (add-hook 'after-init-hook 'sml/setup)
 (setq sml/shorten-modes t)
 (setq sml/shorten-directory nil)
