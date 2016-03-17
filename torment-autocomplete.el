@@ -11,7 +11,7 @@
 ;;(semantic-load-enable-excessive-code-helpers)
 
 (setq yas-snippet-dirs
-      (list "~/.emacs.d/snippets"
+      (list "~/.emacs.d/src/snippets"
             (concat (file-name-as-directory
                      (file-name-directory
                       (find-library-name "yasnippet")))
