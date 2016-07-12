@@ -23,6 +23,8 @@
 (require 'beacon)
 
 (load-theme 'monokai t)
+(setq-default line-spacing 4)
+
 (setq warning-minimum-level :emergency)
 
 (add-hook 'after-init-hook 'sml/setup)
