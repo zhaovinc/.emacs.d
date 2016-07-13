@@ -16,4 +16,4 @@
 (add-hook 'sass-mode-hook (lambda ()
 							(ranbow-mode)))
 
-(add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
+(setq css-indent-offset 2)

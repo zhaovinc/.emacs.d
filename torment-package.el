@@ -74,7 +74,7 @@
 (require-package 'swiper)
 (require-package 'scala-mode)
 (require-package 'session)
-(require-package 'sass-mode)
+(require-package 'scss-mode)
 (require-package 'slim-mode)
 (require-package 'smart-mode-line)
 (require-package 'smex)
