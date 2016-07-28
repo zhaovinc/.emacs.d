@@ -72,6 +72,7 @@
 (require-package 'rhtml-mode)
 (require-package 'ruby-tools)
 (require-package 'swiper)
+(require-package 'swiper-helm)
 (require-package 'scala-mode)
 (require-package 'session)
 (require-package 'scss-mode)
