@@ -260,8 +260,8 @@
 ;;(global-set-key (kbd "M-r") 'isearch-backward)
 
 ;; swipe
-(global-set-key (kbd "M-s") 'swiper)
-(global-set-key (kbd "M-r") 'swiper)
+(global-set-key (kbd "M-s") 'swiper-helm)
+(global-set-key (kbd "M-r") 'swiper-helm)
 
 ;; open file
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
