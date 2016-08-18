@@ -33,6 +33,8 @@
 (setq sml/mode-width 3)
 (setq sml/theme 'respectful)
 
+(global-auto-revert-mode)
+
 (set-fringe-mode '(0 . 0))
 
 (add-to-list 'custom-theme-load-path
