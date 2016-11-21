@@ -12,6 +12,7 @@
 (load "torment-xml")
 (load "torment-javascript")
 (load "torment-css")
+(load "torment-typescript")
 (load "torment-cpp")
 (load "torment-csharp")
 (load "torment-objc")

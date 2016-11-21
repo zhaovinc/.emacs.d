@@ -2,7 +2,7 @@
 
 ;;(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (defun require-package (package &optional min-version no-refresh)
   "Ask elpa to install given PACKAGE."
@@ -17,6 +17,7 @@
 
 (package-initialize)
 
+(require-package 'atom-dark-theme)
 (require-package 'ag)
 (require-package 'apache-mode)
 (require-package 'ace-window)
@@ -36,7 +37,7 @@
 (require-package 'dockerfile-mode)
 (require-package 'elisp-slime-nav)
 (require-package 'escreen)
-(require-package 'emacs-eclim)
+;;(require-package 'emacs-eclim)
 (require-package 'etags-table)
 (require-package 'expand-region)
 (require-package 'ensime)

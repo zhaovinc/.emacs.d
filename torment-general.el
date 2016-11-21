@@ -22,7 +22,7 @@
 (require 'swiper)
 (require 'beacon)
 
-(load-theme 'monokai t)
+(load-theme 'atom-dark)
 (setq-default line-spacing 4)
 
 (setq warning-minimum-level :emergency)
